@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.webp';
 
 const Header = () => {
@@ -8,21 +9,23 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo y nombre */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="Calfrio Logo" className="w-10 h-10 object-cover rounded-lg" />
-            <span className="text-2xl font-bold text-gray-800">Calfrio</span>
+            <Link to="/inicio" className="flex items-center space-x-3">
+              <img src={logo} alt="Calfrio Logo" className="w-10 h-10 object-cover rounded-lg" />
+              <span className="text-2xl font-bold text-gray-800">Calfrio</span>
+            </Link>
           </div>
 
           {/* Navegación central */}
           <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
-            <a href="/inicio" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+            <Link to="/inicio" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
               Inicio
-            </a>
-            <a href="/productos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+            </Link>
+            <Link to="/productos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
               Productos
-            </a>
-            <a href="/services" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+            </Link>
+            <Link to="/services" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
               Servicios
-            </a>
+            </Link>
             <a href="#tienda" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
               Tienda
             </a>
