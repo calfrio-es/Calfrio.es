@@ -1,4 +1,5 @@
 import React from 'react';
+import hero2 from '../../../assets/img/hero2.webp';
 
 const ReparacionServicios = () => {
   const services = [
@@ -72,7 +73,7 @@ const ReparacionServicios = () => {
           <div className="relative">
             <div className="relative h-full">
               <img 
-                src="/src/assets/img/hero2.webp" 
+                src={hero2} 
                 alt="Técnico trabajando en equipos de hostelería"
                 className="w-full h-[200px] lg:h-full object-cover rounded-lg"
               />

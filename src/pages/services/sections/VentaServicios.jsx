@@ -1,4 +1,5 @@
 import React from 'react';
+import hero4 from '../../../assets/img/hero4.webp';
 
 const VentaServicios = () => {
   const services = [
@@ -71,7 +72,7 @@ const VentaServicios = () => {
           <div className="relative">
             <div className="relative h-full">
               <img 
-                src="/src/assets/img/hero4.webp" 
+                src={hero4} 
                 alt="Equipos de hostelería en venta"
                 className="w-full h-[200px] lg:h-full object-cover rounded-lg"
               />

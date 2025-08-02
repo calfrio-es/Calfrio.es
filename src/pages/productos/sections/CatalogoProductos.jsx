@@ -1,4 +1,9 @@
 import React from 'react';
+import hero1 from '../../../assets/img/hero1.webp';
+import hero2 from '../../../assets/img/hero2.webp';
+import hero3 from '../../../assets/img/hero3.webp';
+import hero4 from '../../../assets/img/hero4.webp';
+import hero5 from '../../../assets/img/hero5.webp';
 
 const CatalogoProductos = () => {
   const redireccionamientos = [
@@ -39,7 +44,7 @@ const CatalogoProductos = () => {
       categoria: 'Hornos',
       marca: 'Calfrio',
       medidas: '60x60x85 cm',
-      imagen: '/src/assets/img/hero1.webp',
+      imagen: hero1,
       precio: '€1,299'
     },
     {
@@ -48,7 +53,7 @@ const CatalogoProductos = () => {
       categoria: 'Frigoríficos',
       marca: 'Calfrio',
       medidas: '80x70x190 cm',
-      imagen: '/src/assets/img/hero2.webp',
+      imagen: hero2,
       precio: '€2,199'
     },
     {
@@ -57,7 +62,7 @@ const CatalogoProductos = () => {
       categoria: 'Lavavajillas',
       marca: 'Calfrio',
       medidas: '60x85x85 cm',
-      imagen: '/src/assets/img/hero3.webp',
+      imagen: hero3,
       precio: '€1,899'
     },
     {
@@ -66,7 +71,7 @@ const CatalogoProductos = () => {
       categoria: 'Planchas',
       marca: 'Calfrio',
       medidas: '40x60x15 cm',
-      imagen: '/src/assets/img/hero4.webp',
+      imagen: hero4,
       precio: '€899'
     },
     {
@@ -75,7 +80,7 @@ const CatalogoProductos = () => {
       categoria: 'Batidoras',
       marca: 'Calfrio',
       medidas: '30x30x45 cm',
-      imagen: '/src/assets/img/hero5.webp',
+      imagen: hero5,
       precio: '€599'
     },
     {
@@ -84,7 +89,7 @@ const CatalogoProductos = () => {
       categoria: 'Cafeteras',
       marca: 'Calfrio',
       medidas: '35x45x55 cm',
-      imagen: '/src/assets/img/hero1.webp',
+      imagen: hero1,
       precio: '€799'
     }
   ];
@@ -288,7 +293,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero2.webp" 
+                 src={hero2} 
                  alt="Horno de Convección"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />
@@ -315,7 +320,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero3.webp" 
+                 src={hero3} 
                  alt="Vitrina Refrigerada"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />
@@ -342,7 +347,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero4.webp" 
+                 src={hero4} 
                  alt="Máquina de Hielo"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />
@@ -369,7 +374,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero5.webp" 
+                 src={hero5} 
                  alt="Freidora Industrial"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />
@@ -396,7 +401,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero1.webp" 
+                 src={hero1} 
                  alt="Mesa de Trabajo"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />
@@ -423,7 +428,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero2.webp" 
+                 src={hero2} 
                  alt="Extractor de Humos"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />
@@ -450,7 +455,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero3.webp" 
+                 src={hero3} 
                  alt="Cocina Industrial"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />
@@ -477,7 +482,7 @@ const CatalogoProductos = () => {
            <div className="row-span-4 col-span-1 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
              <div className="h-2/3 overflow-hidden">
                <img 
-                 src="/src/assets/img/hero4.webp" 
+                 src={hero4} 
                  alt="Salamandra"
                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                />

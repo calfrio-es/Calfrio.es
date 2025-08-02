@@ -1,4 +1,5 @@
 import React from 'react';
+import hero3 from '../../../assets/img/hero3.webp';
 
 const MantenimientoServicios = () => {
   const services = [
@@ -97,7 +98,7 @@ const MantenimientoServicios = () => {
           <div className="relative">
             <div className="relative h-full">
               <img 
-                src="/src/assets/img/hero3.webp" 
+                src={hero3} 
                 alt="Técnico realizando mantenimiento preventivo"
                 className="w-full h-[200px] lg:h-full object-cover rounded-lg"
               />

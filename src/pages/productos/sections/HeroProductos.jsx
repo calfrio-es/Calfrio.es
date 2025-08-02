@@ -1,4 +1,9 @@
 import React from 'react';
+import hero1 from '../../../assets/img/hero1.webp';
+import hero2 from '../../../assets/img/hero2.webp';
+import hero3 from '../../../assets/img/hero3.webp';
+import hero4 from '../../../assets/img/hero4.webp';
+import hero5 from '../../../assets/img/hero5.webp';
 
 const HeroProductos = () => {
   return (
@@ -8,7 +13,7 @@ const HeroProductos = () => {
           {/* Celda 1 - Imagen */}
           <div className="col-span-2 row-span-2 bg-gray-200 rounded-lg overflow-hidden">
             <img 
-              src="/src/assets/img/hero1.webp" 
+              src={hero1} 
               alt="Producto de hostelería"
               className="w-full h-full object-cover"
             />
@@ -17,7 +22,7 @@ const HeroProductos = () => {
           {/* Celda 2 - Imagen */}
           <div className="col-span-2 row-span-2 col-start-3 bg-gray-200 rounded-lg overflow-hidden">
             <img 
-              src="/src/assets/img/hero2.webp" 
+              src={hero2} 
               alt="Equipo profesional"
               className="w-full h-full object-cover"
             />
@@ -38,7 +43,7 @@ const HeroProductos = () => {
           {/* Celda 4 - Imagen */}
           <div className="row-span-4 col-start-5 row-start-1 bg-gray-200 rounded-lg overflow-hidden">
             <img 
-              src="/src/assets/img/hero3.webp" 
+              src={hero3} 
               alt="Equipamiento industrial"
               className="w-full h-full object-cover"
             />
@@ -47,7 +52,7 @@ const HeroProductos = () => {
           {/* Celda 5 - Imagen */}
           <div className="row-span-2 col-start-1 row-start-3 bg-gray-200 rounded-lg overflow-hidden">
             <img 
-              src="/src/assets/img/hero4.webp" 
+              src={hero4} 
               alt="Maquinaria de cocina"
               className="w-full h-full object-cover"
             />
@@ -56,7 +61,7 @@ const HeroProductos = () => {
           {/* Celda 6 - Imagen */}
           <div className="col-span-3 row-span-2 col-start-3 row-start-5 bg-gray-200 rounded-lg overflow-hidden">
             <img 
-              src="/src/assets/img/hero5.webp" 
+              src={hero5} 
               alt="Equipos de acero inoxidable"
               className="w-full h-full object-cover"
             />
@@ -65,7 +70,7 @@ const HeroProductos = () => {
           {/* Celda 7 - Imagen */}
           <div className="col-span-2 row-span-2 col-start-1 row-start-5 bg-gray-200 rounded-lg overflow-hidden">
             <img 
-              src="/src/assets/img/hero1.webp" 
+              src={hero1} 
               alt="Hornos industriales"
               className="w-full h-full object-cover"
             />
