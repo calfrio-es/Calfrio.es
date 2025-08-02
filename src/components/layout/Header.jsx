@@ -26,9 +26,9 @@ const Header = () => {
             <Link to="/services" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
               Servicios
             </Link>
-            <a href="#tienda" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
-              Tienda
-            </a>
+            <Link to="/blog/horno-pizza" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+              Blog
+            </Link>
             <a href="#contacto" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
               Contacto
             </a>
