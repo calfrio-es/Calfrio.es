@@ -203,7 +203,97 @@ const HornoParaPizza = () => {
               También te puede interesar
             </h3>
 
-            {/* Sección 1: Hornos Industriales */}
+            {/* Sección 1: Lavavajillas Industriales */}
+            <div className="mb-8 relative">
+              <Link to="/blog/lavavajillas-industriales" className="block">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
+                  Lavavajillas Industriales
+                </h2>
+                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
+                  →
+                </div>
+              </Link>
+            </div>
+
+            {/* Línea negra separadora */}
+            <div className="border-t-2 border-black mb-8"></div>
+
+            {/* Sección 2: Lavavajillas SMEG */}
+            <div className="mb-8 relative">
+              <Link to="/blog/lavavajillas-smeg" className="block">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
+                  Lavavajillas SMEG
+                </h2>
+                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
+                  →
+                </div>
+              </Link>
+            </div>
+
+            {/* Línea negra separadora */}
+            <div className="border-t-2 border-black mb-8"></div>
+
+            {/* Sección 3: Lavavajillas para Hostelería */}
+            <div className="mb-8 relative">
+              <Link to="/blog/lavavajillas-hosteleria" className="block">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
+                  Lavavajillas para Hostelería
+                </h2>
+                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
+                  →
+                </div>
+              </Link>
+            </div>
+
+            {/* Línea negra separadora */}
+            <div className="border-t-2 border-black mb-8"></div>
+
+            {/* Sección 4: Lavavajillas de Copas para Hostelería */}
+            <div className="mb-8 relative">
+              <Link to="/blog/lavavajillas-copas-hosteleria" className="block">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
+                  Lavavajillas de Copas para Hostelería
+                </h2>
+                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
+                  →
+                </div>
+              </Link>
+            </div>
+
+            {/* Línea negra separadora */}
+            <div className="border-t-2 border-black mb-8"></div>
+
+            {/* Sección 5: Lavavajillas de Bar */}
+            <div className="mb-8 relative">
+              <Link to="/blog/lavavajillas-de-bar" className="block">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
+                  Lavavajillas de Bar
+                </h2>
+                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
+                  →
+                </div>
+              </Link>
+            </div>
+
+            {/* Línea negra separadora */}
+            <div className="border-t-2 border-black mb-8"></div>
+
+            {/* Sección 6: Tipos de Lavavajillas de Hostelería */}
+            <div className="mb-8 relative">
+              <Link to="/blog/tipos-lavavajillas-hosteleria" className="block">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
+                  Tipos de Lavavajillas de Hostelería
+                </h2>
+                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
+                  →
+                </div>
+              </Link>
+            </div>
+
+            {/* Línea negra separadora */}
+            <div className="border-t-2 border-black mb-8"></div>
+
+            {/* Sección 7: Hornos Industriales */}
             <div className="mb-8 relative">
               <Link to="/blog/fogones-gas" className="block">
                 <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
@@ -253,6 +343,21 @@ const HornoParaPizza = () => {
               <Link to="/blog/horno-gas" className="block">
                 <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
                   El Horno de Gas
+                </h2>
+                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
+                  →
+                </div>
+              </Link>
+            </div>
+
+            {/* Línea negra separadora */}
+            <div className="border-t-2 border-black mb-8"></div>
+
+            {/* Sección 5: Reparación de Maquinaria de Hostelería */}
+            <div className="mb-8 relative">
+              <Link to="/blog/reparacion-maquinaria-hosteleria" className="block">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
+                  Reparación de Maquinaria de Hostelería
                 </h2>
                 <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
                   →
