@@ -18,8 +18,8 @@ const CocinaDeGasButano = () => {
     <>
       <Header />
       <div className="min-h-screen flex pt-16">
-        {/* Columna izquierda - muy delgada */}
-        <div className="w-1/6 border-r-2 border-black">
+        {/* Columna izquierda - muy delgada - oculta en móviles */}
+        <div className="hidden lg:block w-1/6 border-r-2 border-black">
           <div className="p-6">
             <h2 className="text-lg font-bold text-gray-800 mb-4">
               Índice
@@ -59,8 +59,8 @@ const CocinaDeGasButano = () => {
           </div>
         </div>
 
-        {/* Columna central - más grande */}
-        <div className="w-4/6 border-r-2 border-black">
+        {/* Columna central - más grande - ocupa todo el ancho en móviles */}
+        <div className="w-full lg:w-4/6 lg:border-r-2 lg:border-black">
           <div className="p-6">
             {/* Fecha en la esquina superior izquierda */}
             <div className="text-sm text-gray-600 mb-6">
@@ -177,8 +177,8 @@ const CocinaDeGasButano = () => {
           </div>
         </div>
 
-        {/* Columna derecha - un poco más grande */}
-        <div className="w-2/6">
+        {/* Columna derecha - un poco más grande - oculta en móviles */}
+        <div className="hidden lg:block w-2/6">
           <div className="p-6">
             {/* Mini título */}
             <h3 className="text-sm text-gray-500 mb-6">
