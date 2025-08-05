@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { getProductsByCategory, getCategories } from '../../../data/products';
 import hero1 from '../../../assets/img/hero1.webp';
 import hero2 from '../../../assets/img/hero2.webp';
@@ -55,7 +56,7 @@ import armariosnackcongelados from '../../../assets/img/products/armarios-refrig
 import armariosnackrefrigerados from '../../../assets/img/products/armarios-refrigeradores/armario-snack-rerigerados-350-litros-1-puerta-lacado-blanco-de-600-x650.webp';
 
 const CatalogoProductos = ({ categoriaSeleccionada }) => {
-
+  const navigate = useNavigate();
 
   const [productos, setProductos] = useState([]);
   const [productosFiltrados, setProductosFiltrados] = useState([]);
@@ -160,7 +161,7 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
                         <div 
                           key={producto.id} 
                           className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative min-h-[420px] sm:min-h-[380px] max-h-[480px] sm:max-h-[440px] cursor-pointer group"
-                          onClick={() => window.location.href = `/producto/${producto.slug}`}
+                          onClick={() => navigate(`/producto/${producto.slug}`)}
                         >
                           <div className="h-64 sm:h-72 overflow-hidden">
                             <img 
