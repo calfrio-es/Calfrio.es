@@ -1,4 +1,5 @@
 import React from 'react';
+import hero1Image from '../../../assets/img/hero1.webp';
 
 const About = () => {
   return (
@@ -41,7 +42,7 @@ const About = () => {
           {/* Imagen - Lado derecho */}
           <div className="relative flex justify-center lg:justify-end hidden lg:block">            <div className="relative z-10">
               <img 
-                src="/src/assets/img/hero1.webp" 
+                src={hero1Image} 
                 alt="Equipamiento de hostelería Calfrio" 
                 className="w-full h-96 object-cover rounded-lg shadow-xl"
               />
