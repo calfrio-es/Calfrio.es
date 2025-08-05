@@ -3,7 +3,7 @@ import logo from '../../assets/img/logo.webp';
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-12 px-4">
+    <footer className="bg-white py-12 px-4 border-t-1 border-black">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Sección izquierda - Logo, descripción y redes sociales */}
