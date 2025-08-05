@@ -241,20 +241,20 @@ const ProductoEspecifico = () => {
           {/* Contenido principal */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Imagen del producto - IZQUIERDA */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-start justify-center">
               <div className="relative w-full max-w-md">
-                <div className="bg-white rounded-xl shadow-xl overflow-hidden">
+                <div className="bg-white rounded-xl shadow-xl overflow-hidden h-96">
                   <img 
                     src={producto.imagen} 
                     alt={producto.name}
-                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
             </div>
 
             {/* Información del producto - DERECHA */}
-            <div className="space-y-4">
+            <div className="flex flex-col h-96">
               {/* Categoría */}
               <div>
                 <span className="inline-block bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full text-xs font-medium">
@@ -263,14 +263,14 @@ const ProductoEspecifico = () => {
               </div>
 
               {/* Título */}
-              <div>
+              <div className="mt-4">
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-1">
                   {producto.name}
                 </h1>
               </div>
 
               {/* Descripción */}
-              <div>
+              <div className="mt-4">
                 <h2 className="text-lg font-semibold text-gray-800 mb-2">Descripción</h2>
                 <p className="text-gray-700 leading-relaxed text-sm">
                   {producto.description}
@@ -278,7 +278,7 @@ const ProductoEspecifico = () => {
               </div>
 
               {/* Especificaciones */}
-              <div className="space-y-3">
+              <div className="mt-4 space-y-3">
                 <h2 className="text-lg font-semibold text-gray-800">Especificaciones</h2>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -296,8 +296,8 @@ const ProductoEspecifico = () => {
                 </div>
               </div>
 
-              {/* Botones de acción */}
-              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+              {/* Botones de acción - Siempre al final */}
+              <div className="flex flex-col sm:flex-row gap-3 mt-auto pt-4">
                 <button
                   onClick={handleContactar}
                   className="bg-cyan-500 text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition-colors font-semibold flex items-center justify-center text-sm"
