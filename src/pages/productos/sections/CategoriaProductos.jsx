@@ -1,69 +1,97 @@
 import React from 'react';
+import { getCategories } from '../../../data/products';
 
-const CategoriaProductos = () => {
+const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
   const categorias = [
     {
+      id: 0,
+      nombre: 'Todos los productos',
+      icono: '📦',
+      color: 'bg-gray-500',
+      badge: null,
+      slug: 'todos'
+    },
+    {
       id: 1,
-      nombre: 'Hornos',
-      icono: '🔥',
-      color: 'bg-orange-500',
-      badge: null
+      nombre: 'Accesorios de Lavado',
+      icono: '🧺',
+      color: 'bg-blue-500',
+      badge: null,
+      slug: 'accesorios-lavado'
     },
     {
       id: 2,
-      nombre: 'Frigoríficos',
-      icono: '❄️',
-      color: 'bg-blue-500',
+      nombre: 'Abrillantadoras Cubiertos',
+      icono: '✨',
+      color: 'bg-yellow-500',
       badge: null,
-      destacado: false
+      slug: 'abrillantadoras-cubiertos'
     },
     {
       id: 3,
       nombre: 'Lavavajillas',
       icono: '🧽',
       color: 'bg-cyan-500',
-      badge: null
+      badge: null,
+      slug: 'lavavajillas'
     },
     {
       id: 4,
-      nombre: 'Planchas',
-      icono: '🍳',
-      color: 'bg-gray-600',
-      badge: null
+      nombre: 'Abatidores',
+      icono: '❄️',
+      color: 'bg-indigo-500',
+      badge: null,
+      slug: 'abatidores'
     },
     {
       id: 5,
-      nombre: 'Batidoras',
-      icono: '🥄',
-      color: 'bg-purple-500',
-      badge: null
-    },
-    {
-      id: 6,
-      nombre: 'Cafeteras',
-      icono: '☕',
-      color: 'bg-brown-600',
-      badge: null
-    },
-    {
-      id: 7,
-      nombre: 'Ventilación',
-      icono: '💨',
+      nombre: 'Armarios refrigeradores',
+      icono: '🏠',
       color: 'bg-green-500',
-      badge: null
+      badge: null,
+      slug: 'armarios-refrigeradores'
     }
   ];
+
+  const handleCategoriaClick = (slug) => {
+    onCategoriaSelect(slug);
+    
+    // Scroll suave a los productos
+    setTimeout(() => {
+      const productosSection = document.querySelector('[data-productos-section]');
+      if (productosSection) {
+        productosSection.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }
+    }, 100);
+  };
 
   return (
     <section className="py-8 bg-gray-50">
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="flex overflow-x-auto gap-6 md:gap-8 pb-4 scrollbar-hide justify-start md:justify-center">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+            Selecciona una categoría
+          </h2>
+          <p className="text-gray-600 text-sm md:text-base">
+            Explora nuestros productos por categoría
+          </p>
+        </div>
+        <div className="flex overflow-x-auto gap-10 pb-4 scrollbar-hide justify-center">
           {categorias.map((categoria) => (
-                         <div key={categoria.id} className="flex flex-col items-center group cursor-pointer flex-shrink-0">
-              <div className={`relative w-20 h-20 md:w-24 md:h-24 rounded-full bg-white shadow-lg flex items-center justify-center mb-3 transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl ${
-                categoria.destacado ? 'ring-2 ring-green-500' : ''
+            <div 
+              key={categoria.id} 
+              className={`flex flex-col items-center group cursor-pointer flex-shrink-0 w-20 ${
+                categoriaSeleccionada === categoria.slug ? 'scale-110' : ''
+              }`}
+              onClick={() => handleCategoriaClick(categoria.slug)}
+            >
+              <div className={`relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-white shadow-lg flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl ${
+                categoriaSeleccionada === categoria.slug ? 'shadow-xl bg-cyan-50' : ''
               }`}>
-                <span className="text-2xl md:text-3xl">
+                <span className="text-xl md:text-2xl">
                   {categoria.icono}
                 </span>
                 
@@ -77,7 +105,7 @@ const CategoriaProductos = () => {
                 )}
               </div>
               
-              <span className="text-sm md:text-base font-medium text-gray-700 text-center group-hover:text-gray-900 transition-colors duration-300">
+              <span className="text-xs md:text-sm font-medium text-gray-700 text-center group-hover:text-gray-900 transition-colors duration-300 leading-tight">
                 {categoria.nombre}
               </span>
             </div>

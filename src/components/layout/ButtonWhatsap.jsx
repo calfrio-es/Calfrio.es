@@ -14,7 +14,7 @@ const ButtonWhatsap = () => {
       src={whatsappImg} 
       alt="WhatsApp" 
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 cursor-pointer"
+      className="fixed bottom-6 right-6 w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 cursor-pointer"
     />
   );
 };
