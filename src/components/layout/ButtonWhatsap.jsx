@@ -3,7 +3,7 @@ import whatsappImg from '../../assets/img/whatspimg.png';
 
 const ButtonWhatsap = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '+573144083153';
+    const phoneNumber = '+34632075370';
     const message = 'Hola, me gustaría obtener más información sobre sus productos y servicios.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
