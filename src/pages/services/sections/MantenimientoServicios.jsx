@@ -6,32 +6,32 @@ const MantenimientoServicios = () => {
     {
       id: 1,
       number: "01",
-      title: "Mantenimiento de Hornos",
-      description: "Mantenimiento preventivo y limpieza profesional de hornos industriales y domésticos para restaurantes y hoteles."
+      title: "Accesorios de Lavado",
+      description: "Mantenimiento preventivo y limpieza profesional de accesorios de lavado para equipos de hostelería."
     },
     {
       id: 2,
       number: "02",
-      title: "Lavavajillas Profesionales",
-      description: "Mantenimiento preventivo y limpieza de lavavajillas industriales y equipos de limpieza profesional."
+      title: "Abrillantadoras Cubiertos",
+      description: "Mantenimiento preventivo y limpieza de abrillantadoras de cubiertos industriales."
     },
     {
       id: 3,
       number: "03",
-      title: "Planchas y Freidoras",
-      description: "Mantenimiento preventivo de planchas, freidoras y equipos de cocción para hostelería."
+      title: "Lavavajillas",
+      description: "Mantenimiento preventivo de lavavajillas industriales y equipos de limpieza profesional."
     },
     {
       id: 4,
       number: "04",
-      title: "Neveras y Cámaras",
-      description: "Mantenimiento preventivo de neveras, cámaras frigoríficas y equipos de refrigeración comercial."
+      title: "Abatidores",
+      description: "Mantenimiento preventivo de abatidores de temperatura y equipos de refrigeración comercial."
     },
     {
       id: 5,
       number: "05",
-      title: "Equipos de Acero Inoxidable",
-      description: "Mantenimiento preventivo de equipamiento de acero inoxidable para cocinas profesionales."
+      title: "Armarios Refrigeradores",
+      description: "Mantenimiento preventivo de armarios refrigeradores y equipos de refrigeración para hostelería."
     }
   ];
 

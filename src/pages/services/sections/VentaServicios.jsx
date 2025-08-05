@@ -6,32 +6,32 @@ const VentaServicios = () => {
     {
       id: 1,
       number: "01",
-      title: "Hornos Industriales",
-      description: "Venta de hornos industriales y domésticos de alta calidad para restaurantes, hoteles y cocinas profesionales."
+      title: "Accesorios de Lavado",
+      description: "Venta de accesorios de lavado de alta calidad para equipos de hostelería y cocinas profesionales."
     },
     {
       id: 2,
       number: "02",
-      title: "Lavavajillas Profesionales",
-      description: "Venta de lavavajillas industriales y equipos de limpieza profesional para el sector hostelero."
+      title: "Abrillantadoras Cubiertos",
+      description: "Venta de abrillantadoras de cubiertos industriales y equipos de limpieza profesional."
     },
     {
       id: 3,
       number: "03",
-      title: "Planchas y Freidoras",
-      description: "Venta de planchas, freidoras y equipos de cocción profesional para hostelería."
+      title: "Lavavajillas",
+      description: "Venta de lavavajillas industriales y equipos de limpieza profesional para el sector hostelero."
     },
     {
       id: 4,
       number: "04",
-      title: "Neveras y Cámaras",
-      description: "Venta de neveras, cámaras frigoríficas y equipos de refrigeración comercial."
+      title: "Abatidores",
+      description: "Venta de abatidores de temperatura y equipos de refrigeración comercial para hostelería."
     },
     {
       id: 5,
       number: "05",
-      title: "Equipos de Acero Inoxidable",
-      description: "Venta de equipamiento de acero inoxidable fabricado en España para cocinas profesionales."
+      title: "Armarios Refrigeradores",
+      description: "Venta de armarios refrigeradores y equipos de refrigeración fabricados en España para cocinas profesionales."
     }
   ];
 

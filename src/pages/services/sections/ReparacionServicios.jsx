@@ -6,32 +6,32 @@ const ReparacionServicios = () => {
     {
       id: 1,
       number: "01",
-      title: "Reparación de Hornos",
-      description: "Reparación rápida y eficiente de hornos industriales y domésticos para restaurantes y hoteles."
+      title: "Accesorios de Lavado",
+      description: "Reparación rápida y eficiente de accesorios de lavado para equipos de hostelería."
     },
     {
       id: 2,
       number: "02",
-      title: "Lavavajillas Profesionales",
-      description: "Reparación especializada de lavavajillas industriales y equipos de limpieza profesional."
+      title: "Abrillantadoras Cubiertos",
+      description: "Reparación especializada de abrillantadoras de cubiertos industriales."
     },
     {
       id: 3,
       number: "03",
-      title: "Planchas y Freidoras",
-      description: "Reparación de planchas, freidoras y equipos de cocción para hostelería."
+      title: "Lavavajillas",
+      description: "Reparación de lavavajillas industriales y equipos de limpieza profesional."
     },
     {
       id: 4,
       number: "04",
-      title: "Neveras y Cámaras",
-      description: "Reparación técnica de neveras, cámaras frigoríficas y equipos de refrigeración comercial."
+      title: "Abatidores",
+      description: "Reparación técnica de abatidores de temperatura y equipos de refrigeración comercial."
     },
     {
       id: 5,
       number: "05",
-      title: "Equipos de Acero Inoxidable",
-      description: "Reparación de equipamiento de acero inoxidable para cocinas profesionales."
+      title: "Armarios Refrigeradores",
+      description: "Reparación de armarios refrigeradores y equipos de refrigeración para hostelería."
     }
   ];
 
