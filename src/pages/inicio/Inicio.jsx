@@ -6,6 +6,7 @@ import Services from './sections/ServicesInicio';
 import Footer from '../../components/layout/Footer';
 import Contact from '../../components/sections/Contact';
 import ButtonWhatsap from '../../components/layout/ButtonWhatsap';
+import ProductsInicio from './sections/ProductsInicio';
 
 const Inicio = () => {
   return (
@@ -13,6 +14,7 @@ const Inicio = () => {
       <Header />
       <Hero />
       <About />
+      <ProductsInicio />
       <Services />
       <Contact />
       <Footer />

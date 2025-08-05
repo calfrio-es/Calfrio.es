@@ -35,38 +35,41 @@ const Footer = () => {
           </div>
 
           {/* Sección derecha - Columnas de navegación */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-            {/* Columna 1: Productos */}
-            <div>
-              <h3 className="font-bold text-black mb-3 text-sm">Productos</h3>
-              <ul className="space-y-1">
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Características</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Precios</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Integraciones</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Actualizaciones</a></li>
-              </ul>
-            </div>
+          <div className="space-y-6 sm:space-y-0">
+            {/* Fila superior - Productos y Servicios */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center sm:text-left">
+              {/* Columna 1: Productos */}
+              <div>
+                <h3 className="font-bold text-black mb-3 text-sm">Productos</h3>
+                <ul className="space-y-1">
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Características</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Precios</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Integraciones</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Actualizaciones</a></li>
+                </ul>
+              </div>
 
-            {/* Columna 2: Servicios */}
-            <div>
-              <h3 className="font-bold text-black mb-3 text-sm">Servicio</h3>
-              <ul className="space-y-1">
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Documentación</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Tutoriales</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Blog</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Soporte</a></li>
-              </ul>
-            </div>
+              {/* Columna 2: Servicios */}
+              <div>
+                <h3 className="font-bold text-black mb-3 text-sm">Servicio</h3>
+                <ul className="space-y-1">
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Documentación</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Tutoriales</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Blog</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Soporte</a></li>
+                </ul>
+              </div>
 
-            {/* Columna 3: Contacto */}
-            <div>
-              <h3 className="font-bold text-black mb-3 text-sm">Contacto</h3>
-              <ul className="space-y-1">
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Acerca de</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Carreras</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Contacto</a></li>
-                <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Socios</a></li>
-              </ul>
+              {/* Columna 3: Contacto */}
+              <div className="col-span-2 sm:col-span-1 text-center sm:text-left">
+                <h3 className="font-bold text-black mb-3 text-sm">Contacto</h3>
+                <ul className="space-y-1">
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Acerca de</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Carreras</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Contacto</a></li>
+                  <li><a href="#" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 text-sm no-underline">Socios</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

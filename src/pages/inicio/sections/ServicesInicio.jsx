@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
@@ -89,6 +90,22 @@ const Services = () => {
               </p>
             </div>
           ))}
+          
+          {/* Botón "Conoce más" en el sexto espacio */}
+          <div className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:bg-white border border-gray-100 flex flex-col items-center justify-center text-center">
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              Descubre todos nuestros servicios especializados y soluciones personalizadas para tu negocio.
+            </p>
+            <Link 
+              to="/services" 
+              className="inline-flex items-center px-6 py-3 bg-cyan-400 text-white font-medium rounded-lg hover:bg-cyan-500 transition-colors duration-300"
+            >
+              Ver Todos los Servicios
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
         </div>
 
         
