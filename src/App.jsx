@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Inicio from './pages/inicio/Inicio';
 import Services from './pages/services/Servicios';
 import Productos from './pages/productos/Productos';
+import ProductoEspecifico from './pages/productos/ProductoEspecifico';
 import HornoParaPizza from './pages/blog/HornoParaPizza';
 import FogonesDeGas from './pages/blog/FogonesDeGas';
 import CocinasAGas from './pages/blog/CocinasAGas';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/services" element={<Services />} />
           <Route path="/productos" element={<Productos />} />
+          <Route path="/producto/:slug" element={<ProductoEspecifico />} />
           <Route path="/blog/horno-pizza" element={<HornoParaPizza />} />
           <Route path="/blog/fogones-gas" element={<FogonesDeGas />} />
           <Route path="/blog/cocinas-gas" element={<CocinasAGas />} />

@@ -1,12 +1,19 @@
 import React from 'react';
 import { getCategories } from '../../../data/products';
 
+// Importar imágenes representativas de cada categoría
+import cesta15platos from '../../../assets/img/products/accesorios-lavado/cesta15platos.webp';
+import secadorabrillantadora3000ud from '../../../assets/img/products/abrillantadoras-cubiertos/secadorabrillantadora3000ud.webp';
+import lavaobjetos445cm from '../../../assets/img/products/lavavajillas/lavaobjetos445cm.webp';
+import abatidor10bandejas from '../../../assets/img/products/abatidores/abatidor-de-temperatura-mixto-10-bandejas-gn2-1-y-600x400-mm-de-1270-x1090-x1800h-mm-cordoba-cr-102-600x600.webp';
+import armariogn21inoxidable from '../../../assets/img/products/armarios-refrigeradores/armario-gn2-1-inoxidable-con-12-cajones-600.webp';
+
 const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
   const categorias = [
     {
       id: 0,
       nombre: 'Todos los productos',
-      icono: '📦',
+      imagen: null,
       color: 'bg-gray-500',
       badge: null,
       slug: 'todos'
@@ -14,7 +21,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 1,
       nombre: 'Accesorios de Lavado',
-      icono: '🧺',
+      imagen: cesta15platos,
       color: 'bg-blue-500',
       badge: null,
       slug: 'accesorios-lavado'
@@ -22,7 +29,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 2,
       nombre: 'Abrillantadoras Cubiertos',
-      icono: '✨',
+      imagen: secadorabrillantadora3000ud,
       color: 'bg-yellow-500',
       badge: null,
       slug: 'abrillantadoras-cubiertos'
@@ -30,7 +37,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 3,
       nombre: 'Lavavajillas',
-      icono: '🧽',
+      imagen: lavaobjetos445cm,
       color: 'bg-cyan-500',
       badge: null,
       slug: 'lavavajillas'
@@ -38,7 +45,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 4,
       nombre: 'Abatidores',
-      icono: '❄️',
+      imagen: abatidor10bandejas,
       color: 'bg-indigo-500',
       badge: null,
       slug: 'abatidores'
@@ -46,7 +53,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 5,
       nombre: 'Armarios refrigeradores',
-      icono: '🏠',
+      imagen: armariogn21inoxidable,
       color: 'bg-green-500',
       badge: null,
       slug: 'armarios-refrigeradores'
@@ -88,12 +95,20 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
               }`}
               onClick={() => handleCategoriaClick(categoria.slug)}
             >
-              <div className={`relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-white shadow-lg flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl ${
+              <div className={`relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-white shadow-lg flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden ${
                 categoriaSeleccionada === categoria.slug ? 'shadow-xl bg-cyan-50' : ''
               }`}>
-                <span className="text-xl md:text-2xl">
-                  {categoria.icono}
-                </span>
+                {categoria.imagen ? (
+                  <img 
+                    src={categoria.imagen} 
+                    alt={categoria.nombre}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span className="text-xl md:text-2xl">
+                    📦
+                  </span>
+                )}
                 
                 {/* Badge para elementos destacados */}
                 {categoria.badge && (

@@ -115,7 +115,7 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
       const productosConImagenes = productosCategoria.map((producto) => ({
         ...producto,
         imagen: imagenesMap[producto.image] || imagenesPorDefecto[Math.floor(Math.random() * imagenesPorDefecto.length)],
-        marca: 'Calfrio',
+      marca: 'Calfrio',
         medidas: producto.dimensions || 'Medidas a consultar'
       }));
       setProductosFiltrados(productosConImagenes);
@@ -130,14 +130,14 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
       const productosConImagenes = todosLosProductos.map((producto) => ({
         ...producto,
         imagen: imagenesMap[producto.image] || imagenesPorDefecto[Math.floor(Math.random() * imagenesPorDefecto.length)],
-        marca: 'Calfrio',
+      marca: 'Calfrio',
         medidas: producto.dimensions || 'Medidas a consultar'
       }));
       setProductosFiltrados(productosConImagenes);
     }
   }, [categoriaSeleccionada]);
 
-    return (
+  return (
     <section className="py-12 bg-white" data-productos-section>
       <div className="container mx-auto max-w-7xl px-4">
         {/* Título dinámico */}
@@ -151,41 +151,45 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
           <p className="text-gray-600 text-sm md:text-base">
             {productosFiltrados.length} productos disponibles
           </p>
-        </div>
-        
+          </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
                                           {/* Productos dinámicos */}
-                     {productosFiltrados.map((producto, index) => (
-                                                                       <div key={producto.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative min-h-[420px] sm:min-h-[380px] max-h-[480px] sm:max-h-[440px]">
+                                           {productosFiltrados.map((producto, index) => (
+                        <div 
+                          key={producto.id} 
+                          className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative min-h-[420px] sm:min-h-[380px] max-h-[480px] sm:max-h-[440px] cursor-pointer group"
+                          onClick={() => window.location.href = `/producto/${producto.slug}`}
+                        >
                           <div className="h-64 sm:h-72 overflow-hidden">
-                           <img 
-                             src={producto.imagen} 
-                             alt={producto.name}
-                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                           />
-                         </div>
-                         <div className="p-3 flex flex-col h-full">
-                           <div className="flex justify-start items-start mb-1">
-                             <span className="text-xs bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full">
-                               {producto.categoryName}
-                             </span>
-                           </div>
-                           <h3 className="text-sm font-semibold text-gray-800 mb-1">{producto.name}</h3>
-                           <p className="text-xs text-gray-600 mb-1">Marca: {producto.marca}</p>
-                           <p className="text-xs text-gray-500">Medidas: {producto.medidas}</p>
-                           {producto.capacity && (
-                             <p className="text-xs text-gray-500">Capacidad: {producto.capacity}</p>
-                           )}
-                         </div>
-                         <div className="absolute bottom-3 right-3 bg-cyan-500 text-white p-2 rounded-full shadow-lg hover:bg-cyan-600 transition-colors cursor-pointer">
-                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                           </svg>
-                         </div>
-                       </div>
-                     ))}
-                   </div>
+                            <img 
+                              src={producto.imagen} 
+                              alt={producto.name}
+                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+               />
+             </div>
+                          <div className="p-3 flex flex-col h-full">
+                            <div className="flex justify-start items-start mb-1">
+                 <span className="text-xs bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full">
+                                {producto.categoryName}
+                 </span>
+               </div>
+                            <h3 className="text-sm font-semibold text-gray-800 mb-1 group-hover:text-cyan-600 transition-colors">{producto.name}</h3>
+                            <p className="text-xs text-gray-600 mb-1">Marca: {producto.marca}</p>
+                            <p className="text-xs text-gray-500">Medidas: {producto.medidas}</p>
+                            {producto.capacity && (
+                              <p className="text-xs text-gray-500">Capacidad: {producto.capacity}</p>
+                            )}
+             </div>
+                          <div className="absolute bottom-3 right-3 bg-cyan-500 text-white p-2 rounded-full shadow-lg hover:bg-cyan-600 transition-colors">
+               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+               </svg>
+             </div>
+           </div>
+                      ))}
+         </div>
        </div>
      </section>
    );
