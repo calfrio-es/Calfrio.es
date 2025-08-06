@@ -44,10 +44,10 @@ const Hero = () => {
       <div className="relative z-10 w-full h-full flex items-center justify-center">
         <div className="text-center text-white max-w-4xl px-5">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg">
-            Bienvenido a <span className="text-cyan-400 drop-shadow-[0_0_10px_rgba(0,212,255,0.5)]">Calfrio</span>
+            Maquinaria de <span className="text-cyan-400 drop-shadow-[0_0_10px_rgba(0,212,255,0.5)]">Hostelería</span> Profesional
           </h1>
           <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-md">
-            Soluciones innovadoras para la hostelería
+            Bienvenido a Calfrio, tu aliado en la industria de la hostelería.
           </p>
         </div>
       </div>
