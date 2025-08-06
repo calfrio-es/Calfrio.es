@@ -149,7 +149,7 @@ const ProductoEspecifico = () => {
 
   const handleContactar = () => {
     const mensaje = `Hola, estoy interesado en el producto: ${producto?.name}`;
-    const url = `https://wa.me/34600000000?text=${encodeURIComponent(mensaje)}`;
+    const url = `https://wa.me/34632075370?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
   };
 
