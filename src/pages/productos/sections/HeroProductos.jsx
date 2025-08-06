@@ -1,80 +1,29 @@
 import React from 'react';
-import hero1 from '../../../assets/img/hero1.webp';
-import hero2 from '../../../assets/img/hero2.webp';
-import hero3 from '../../../assets/img/hero3.webp';
-import hero4 from '../../../assets/img/hero4.webp';
-import hero5 from '../../../assets/img/hero5.webp';
+import heroProductos from '../../../assets/img/hero-productos.png';
 
 const HeroProductos = () => {
   return (
-    <section className="relative bg-white overflow-hidden p-4">
-      <div className="container mx-auto max-w-7xl">
-        <div className="grid grid-cols-5 grid-rows-6 gap-4 h-[70vh] md:h-[80vh]">
-          {/* Celda 1 - Imagen */}
-          <div className="col-span-2 row-span-2 bg-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src={hero1} 
-              alt="Producto de hostelería"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          {/* Celda 2 - Imagen */}
-          <div className="col-span-2 row-span-2 col-start-3 bg-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src={hero2} 
-              alt="Equipo profesional"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          {/* Celda 3 - Título PRODUCTOS */}
-          <div className="col-span-3 row-span-2 col-start-2 row-start-3 bg-white rounded-lg flex items-center justify-center p-4">
-            <div className="text-center text-black max-w-4xl px-5">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg">
-                Nuestros <span className="text-cyan-400 drop-shadow-[0_0_10px_rgba(0,212,255,0.5)]">Productos</span>
-              </h1>
-              <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-md">
-                Equipamiento profesional para tu negocio
-              </p>
-            </div>
-          </div>
-          
-          {/* Celda 4 - Imagen */}
-          <div className="row-span-4 col-start-5 row-start-1 bg-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src={hero3} 
-              alt="Equipamiento industrial"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          {/* Celda 5 - Imagen */}
-          <div className="row-span-2 col-start-1 row-start-3 bg-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src={hero4} 
-              alt="Maquinaria de cocina"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          {/* Celda 6 - Imagen */}
-          <div className="col-span-3 row-span-2 col-start-3 row-start-5 bg-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src={hero5} 
-              alt="Equipos de acero inoxidable"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          {/* Celda 7 - Imagen */}
-          <div className="col-span-2 row-span-2 col-start-1 row-start-5 bg-gray-200 rounded-lg overflow-hidden">
-            <img 
-              src={hero1} 
-              alt="Hornos industriales"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <section className="relative bg-white overflow-hidden">
+      {/* Imagen de fondo */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroProductos} 
+          alt="Productos de hostelería"
+          className="w-full h-full object-cover"
+        />
+        {/* Overlay para mejorar la legibilidad del texto */}
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
+      
+      {/* Contenido centrado */}
+      <div className="relative z-10 flex items-center justify-center h-[70vh] md:h-[80vh]">
+        <div className="text-center text-white max-w-4xl px-5">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg">
+            Nuestros <span className="text-cyan-400 drop-shadow-[0_0_10px_rgba(0,212,255,0.5)]">Productos</span>
+          </h1>
+          <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-md">
+            Equipamiento de hostelería profesional para tu negocio
+          </p>
         </div>
       </div>
     </section>
