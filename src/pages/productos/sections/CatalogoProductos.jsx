@@ -116,35 +116,25 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
       const productosConImagenes = productosCategoria.map((producto) => ({
         ...producto,
         imagen: imagenesMap[producto.image] || imagenesPorDefecto[Math.floor(Math.random() * imagenesPorDefecto.length)],
-        marca: 'Calfrio',
+      marca: 'Calfrio',
         medidas: producto.dimensions || 'Medidas a consultar'
       }));
       setProductosFiltrados(productosConImagenes);
     } else {
-      // Mostrar todos los productos agrupados por categoría
-      const categorias = [
-        { slug: 'abrillantadoras-cubiertos', nombre: 'Abrillantadoras Cubiertos' },
-        { slug: 'lavavajillas', nombre: 'Lavavajillas' },
-        { slug: 'abatidores', nombre: 'Abatidores' },
-        { slug: 'armarios-refrigeradores', nombre: 'Armarios Refrigeradores' },
-        { slug: 'accesorios-lavado', nombre: 'Accesorios de Lavado' }
-      ];
+      // Mostrar todos los productos si no hay categoría seleccionada o si se selecciona "todos"
+      const todosLosProductos = getProductsByCategory('accesorios-lavado')
+        .concat(getProductsByCategory('abrillantadoras-cubiertos'))
+        .concat(getProductsByCategory('lavavajillas'))
+        .concat(getProductsByCategory('abatidores'))
+        .concat(getProductsByCategory('armarios-refrigeradores'));
       
-      const productosAgrupados = categorias.map(categoria => {
-        const productosCategoria = getProductsByCategory(categoria.slug);
-        const productosConImagenes = productosCategoria.map((producto) => ({
-          ...producto,
-          imagen: imagenesMap[producto.image] || imagenesPorDefecto[Math.floor(Math.random() * imagenesPorDefecto.length)],
-          marca: 'Calfrio',
-          medidas: producto.dimensions || 'Medidas a consultar'
-        }));
-        return {
-          categoria: categoria.nombre,
-          productos: productosConImagenes
-        };
-      });
-      
-      setProductosFiltrados(productosAgrupados);
+      const productosConImagenes = todosLosProductos.map((producto) => ({
+        ...producto,
+        imagen: imagenesMap[producto.image] || imagenesPorDefecto[Math.floor(Math.random() * imagenesPorDefecto.length)],
+      marca: 'Calfrio',
+        medidas: producto.dimensions || 'Medidas a consultar'
+      }));
+      setProductosFiltrados(productosConImagenes);
     }
   }, [categoriaSeleccionada]);
 
@@ -152,98 +142,51 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
     <section className="py-12 bg-white" data-productos-section>
       <div className="container mx-auto max-w-7xl px-4">
         {/* Título dinámico */}
-        <div className="mb-8 text-center">
+        <div className="mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
             {categoriaSeleccionada && categoriaSeleccionada !== 'todos'
               ? productosFiltrados[0]?.categoryName || 'Productos'
               : 'Todos los productos'
             }
           </h2>
-          {categoriaSeleccionada && categoriaSeleccionada !== 'todos' && (
-            <p className="text-gray-600 text-sm md:text-base">
-              {productosFiltrados.length} productos disponibles
-            </p>
-          )}
-        </div>
+          <p className="text-gray-600 text-sm md:text-base">
+            {productosFiltrados.length} productos disponibles
+          </p>
+          </div>
 
-                {categoriaSeleccionada && categoriaSeleccionada !== 'todos' ? (
-          // Mostrar productos de una categoría específica
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {productosFiltrados.map((producto, index) => (
-              <div 
-                key={producto.id} 
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative min-h-[420px] sm:min-h-[380px] max-h-[480px] sm:max-h-[440px] cursor-pointer group"
-                onClick={() => navigate(`/producto/${producto.slug}`)}
-              >
-                <div className="h-64 sm:h-72 overflow-hidden">
-                  <img 
-                    src={producto.imagen} 
-                    alt={producto.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-3 flex flex-col h-full">
-                  <div className="flex justify-start items-start mb-1">
-                    <span className="text-xs bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full">
-                      {producto.categoryName}
-                    </span>
-                  </div>
-                  <h3 className="text-sm font-semibold text-gray-800 mb-1 group-hover:text-cyan-600 transition-colors">{producto.name}</h3>
-                  <p className="text-xs text-gray-600 mb-1">Marca: {producto.marca}</p>
-                  <p className="text-xs text-gray-500">Medidas: {producto.medidas}</p>
-                  {producto.capacity && (
-                    <p className="text-xs text-gray-500">Capacidad: {producto.capacity}</p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          // Mostrar productos agrupados por categoría
-          <div className="space-y-12">
-            {productosFiltrados.map((grupo, index) => (
-              <div key={index} className="space-y-6">
-                {/* Título de la categoría */}
-                <div className="border-b border-gray-200 pb-4">
-                  <h3 className="text-2xl font-bold text-gray-800">{grupo.categoria}</h3>
-                  <p className="text-gray-600 text-sm mt-1">{grupo.productos.length} productos</p>
-                </div>
-                
-                {/* Grid de productos de esta categoría */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {grupo.productos.map((producto) => (
-                    <div 
-                      key={producto.id} 
-                      className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative min-h-[420px] sm:min-h-[380px] max-h-[480px] sm:max-h-[440px] cursor-pointer group"
-                      onClick={() => navigate(`/producto/${producto.slug}`)}
-                    >
-                      <div className="h-64 sm:h-72 overflow-hidden">
-                        <img 
-                          src={producto.imagen} 
-                          alt={producto.name}
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <div className="p-3 flex flex-col h-full">
-                        <div className="flex justify-start items-start mb-1">
-                          <span className="text-xs bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full">
-                            {producto.categoryName}
-                          </span>
-                        </div>
-                        <h3 className="text-sm font-semibold text-gray-800 mb-1 group-hover:text-cyan-600 transition-colors">{producto.name}</h3>
-                        <p className="text-xs text-gray-600 mb-1">Marca: {producto.marca}</p>
-                        <p className="text-xs text-gray-500">Medidas: {producto.medidas}</p>
-                        {producto.capacity && (
-                          <p className="text-xs text-gray-500">Capacidad: {producto.capacity}</p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                                          {/* Productos dinámicos */}
+                                           {productosFiltrados.map((producto, index) => (
+                        <div 
+                          key={producto.id} 
+                          className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative min-h-[420px] sm:min-h-[380px] max-h-[480px] sm:max-h-[440px] cursor-pointer group"
+                          onClick={() => navigate(`/producto/${producto.slug}`)}
+                        >
+                          <div className="h-64 sm:h-72 overflow-hidden">
+                            <img 
+                              src={producto.imagen} 
+                              alt={producto.name}
+                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+               />
+             </div>
+                          <div className="p-3 flex flex-col h-full">
+                            <div className="flex justify-start items-start mb-1">
+                 <span className="text-xs bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full">
+                                {producto.categoryName}
+                 </span>
+               </div>
+                            <h3 className="text-sm font-semibold text-gray-800 mb-1 group-hover:text-cyan-600 transition-colors">{producto.name}</h3>
+                            <p className="text-xs text-gray-600 mb-1">Marca: {producto.marca}</p>
+                            <p className="text-xs text-gray-500">Medidas: {producto.medidas}</p>
+                            {producto.capacity && (
+                              <p className="text-xs text-gray-500">Capacidad: {producto.capacity}</p>
+                            )}
+             </div>
+
+           </div>
+                      ))}
+         </div>
        </div>
      </section>
    );
