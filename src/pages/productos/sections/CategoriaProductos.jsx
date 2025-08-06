@@ -8,7 +8,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
   const categorias = [
     {
       id: 0,
-      nombre: 'Todos los productos',
+      nombre: 'Todos',
       icono: Package,
       color: 'bg-gray-500',
       badge: null,
@@ -17,7 +17,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     },
     {
       id: 1,
-      nombre: 'Abrillantadoras Cubiertos',
+      nombre: 'Abrillantadoras',
       icono: Sparkles,
       color: 'bg-yellow-500',
       badge: null,
@@ -44,7 +44,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     },
     {
       id: 4,
-      nombre: 'Armarios refrigeradores',
+      nombre: 'Refrigeradores',
       icono: Box,
       color: 'bg-green-500',
       badge: null,
@@ -53,7 +53,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     },
     {
       id: 5,
-      nombre: 'Accesorios de Lavado',
+      nombre: 'Accesorios',
       icono: CircleDot,
       color: 'bg-blue-500',
       badge: null,
@@ -65,13 +65,16 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
   const handleCategoriaClick = (slug) => {
     onCategoriaSelect(slug);
     
-    // Scroll suave a los productos
+    // Scroll suave a los productos, ajustado para el sticky
     setTimeout(() => {
       const productosSection = document.querySelector('[data-productos-section]');
       if (productosSection) {
-        productosSection.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start' 
+        const stickyHeight = 130; // Altura aproximada del sticky (top-16 + padding)
+        const elementPosition = productosSection.offsetTop - stickyHeight - 20; // 20px de margen adicional
+        
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
         });
       }
     }, 100);
