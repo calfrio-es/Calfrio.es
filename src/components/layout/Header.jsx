@@ -100,175 +100,175 @@ const Header = () => {
               isAnimating ? 'translate-x-0' : 'translate-x-full'
             }`}
           >
-            <div className="flex flex-col h-full">
-              {/* Header del sheet */}
-              <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                <div className="flex items-center space-x-3">
-                  <img src={logo} alt="Calfrio Logo" className="w-8 h-8 object-cover rounded-lg" />
-                  <span className="text-xl font-bold text-gray-800">Calfrio</span>
-                </div>
-                <button 
-                  onClick={closeMobileMenu}
-                  className="text-gray-500 hover:text-gray-700 transition-colors duration-300"
-                >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
+                         <div className="flex flex-col h-full">
+               {/* Header del sheet - fijo */}
+               <div className="flex items-center justify-between p-6 border-b border-gray-200 flex-shrink-0">
+                 <div className="flex items-center space-x-3">
+                   <img src={logo} alt="Calfrio Logo" className="w-8 h-8 object-cover rounded-lg" />
+                   <span className="text-xl font-bold text-gray-800">Calfrio</span>
+                 </div>
+                 <button 
+                   onClick={closeMobileMenu}
+                   className="text-gray-500 hover:text-gray-700 transition-colors duration-300"
+                 >
+                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                   </svg>
+                 </button>
+               </div>
 
-              {/* Navegación móvil */}
-              <nav className="flex-1 p-6">
-                <div className="space-y-6">
-                  <Link 
-                    to="/inicio" 
-                    onClick={closeMobileMenu}
-                    className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
-                  >
-                    Inicio
-                  </Link>
-                  <Link 
-                    to="/services" 
-                    onClick={closeMobileMenu}
-                    className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
-                  >
-                    Servicios
-                  </Link>
-                  <Link 
-                    to="/productos" 
-                    onClick={closeMobileMenu}
-                    className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
-                  >
-                    Productos
-                  </Link>
-                  
-                  {/* Acordeón Blog para móvil */}
-                  <div className="space-y-2">
-                    <button 
-                      onClick={toggleBlogExpansion}
-                      className="flex items-center justify-between w-full text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
-                    >
-                      <span>Blog</span>
-                      <svg 
-                        className={`w-5 h-5 transition-transform duration-300 ${isBlogExpanded ? 'rotate-180' : ''}`} 
-                        fill="none" 
-                        stroke="currentColor" 
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                    
-                    {isBlogExpanded && (
-                      <div className="pl-4 space-y-2 border-l-2 border-gray-200">
-                        <Link 
-                          to="/blog/horno-pizza" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Los Hornos para Pizza
-                        </Link>
-                        <Link 
-                          to="/blog/fogones-gas" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Los Fogones de Gas
-                        </Link>
-                        <Link 
-                          to="/blog/cocinas-gas" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Cocinas de Gas Profesionales
-                        </Link>
-                        <Link 
-                          to="/blog/cocina-gas-butano" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Cocina de Gas Butano
-                        </Link>
-                        <Link 
-                          to="/blog/horno-gas" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          El Horno de Gas
-                        </Link>
-                        <Link 
-                          to="/blog/lavavajillas-industriales" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Lavavajillas Industriales
-                        </Link>
-                        <Link 
-                          to="/blog/lavavajillas-smeg" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Lavavajillas SMEG
-                        </Link>
-                        <Link 
-                          to="/blog/lavavajillas-hosteleria" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Lavavajillas para Hostelería
-                        </Link>
-                        <Link 
-                          to="/blog/lavavajillas-copas-hosteleria" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Lavavajillas de Copas para Hostelería
-                        </Link>
-                        <Link 
-                          to="/blog/lavavajillas-de-bar" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Lavavajillas de Bar
-                        </Link>
-                        <Link 
-                          to="/blog/tipos-lavavajillas-hosteleria" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Tipos de Lavavajillas de Hostelería
-                        </Link>
-                        <Link 
-                          to="/blog/reparacion-maquinaria-hosteleria" 
-                          onClick={closeMobileMenu}
-                          className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
-                        >
-                          Reparación de Maquinaria de Hostelería
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                  
-                  <Link 
-                    to="/contacto" 
-                    onClick={closeMobileMenu}
-                    className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
-                  >
-                    Contacto
-                  </Link>
-                </div>
-              </nav>
+               {/* Navegación móvil - con scroll */}
+               <nav className="flex-1 overflow-y-auto p-6">
+                 <div className="space-y-6">
+                   <Link 
+                     to="/inicio" 
+                     onClick={closeMobileMenu}
+                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                   >
+                     Inicio
+                   </Link>
+                   <Link 
+                     to="/services" 
+                     onClick={closeMobileMenu}
+                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                   >
+                     Servicios
+                   </Link>
+                   <Link 
+                     to="/productos" 
+                     onClick={closeMobileMenu}
+                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                   >
+                     Productos
+                   </Link>
+                   
+                   {/* Acordeón Blog para móvil */}
+                   <div className="space-y-2">
+                     <button 
+                       onClick={toggleBlogExpansion}
+                       className="flex items-center justify-between w-full text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                     >
+                       <span>Blog</span>
+                       <svg 
+                         className={`w-5 h-5 transition-transform duration-300 ${isBlogExpanded ? 'rotate-180' : ''}`} 
+                         fill="none" 
+                         stroke="currentColor" 
+                         viewBox="0 0 24 24"
+                       >
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                       </svg>
+                     </button>
+                     
+                     {isBlogExpanded && (
+                       <div className="pl-4 space-y-2 border-l-2 border-gray-200">
+                         <Link 
+                           to="/blog/horno-pizza" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Los Hornos para Pizza
+                         </Link>
+                         <Link 
+                           to="/blog/fogones-gas" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Los Fogones de Gas
+                         </Link>
+                         <Link 
+                           to="/blog/cocinas-gas" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Cocinas de Gas Profesionales
+                         </Link>
+                         <Link 
+                           to="/blog/cocina-gas-butano" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Cocina de Gas Butano
+                         </Link>
+                         <Link 
+                           to="/blog/horno-gas" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           El Horno de Gas
+                         </Link>
+                         <Link 
+                           to="/blog/lavavajillas-industriales" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Lavavajillas Industriales
+                         </Link>
+                         <Link 
+                           to="/blog/lavavajillas-smeg" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Lavavajillas SMEG
+                         </Link>
+                         <Link 
+                           to="/blog/lavavajillas-hosteleria" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Lavavajillas para Hostelería
+                         </Link>
+                         <Link 
+                           to="/blog/lavavajillas-copas-hosteleria" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Lavavajillas de Copas para Hostelería
+                         </Link>
+                         <Link 
+                           to="/blog/lavavajillas-de-bar" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Lavavajillas de Bar
+                         </Link>
+                         <Link 
+                           to="/blog/tipos-lavavajillas-hosteleria" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Tipos de Lavavajillas de Hostelería
+                         </Link>
+                         <Link 
+                           to="/blog/reparacion-maquinaria-hosteleria" 
+                           onClick={closeMobileMenu}
+                           className="block text-sm text-gray-700 hover:text-cyan-400 transition-colors duration-300"
+                         >
+                           Reparación de Maquinaria de Hostelería
+                         </Link>
+                       </div>
+                     )}
+                   </div>
+                   
+                   <Link 
+                     to="/contacto" 
+                     onClick={closeMobileMenu}
+                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                   >
+                     Contacto
+                   </Link>
+                 </div>
+               </nav>
 
-              {/* Footer del sheet con teléfono */}
-              <div className="p-6 border-t border-gray-200">
-                <div className="flex items-center space-x-3">
-                  <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <span className="text-gray-800 font-medium">+34 632 075 370</span>
-                </div>
-              </div>
-            </div>
+               {/* Footer del sheet con teléfono - fijo */}
+               <div className="p-6 border-t border-gray-200 flex-shrink-0">
+                 <div className="flex items-center space-x-3">
+                   <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                   </svg>
+                   <span className="text-gray-800 font-medium">+34 632 075 370</span>
+                 </div>
+               </div>
+             </div>
           </div>
         </>
       )}
