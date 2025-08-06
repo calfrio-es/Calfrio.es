@@ -246,7 +246,7 @@ const ProductoEspecifico = () => {
             {/* Imagen del producto - IZQUIERDA */}
             <div className="flex items-start justify-center">
               <div className="relative w-full max-w-md">
-                <div className="bg-white rounded-xl shadow-xl overflow-hidden h-80 lg:h-96">
+                <div className="bg-white rounded-xl overflow-hidden h-80 lg:h-96">
                   <img 
                     src={producto.imagen} 
                     alt={producto.name}
