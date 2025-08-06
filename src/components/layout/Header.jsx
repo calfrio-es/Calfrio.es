@@ -52,9 +52,9 @@ const Header = () => {
               <Link to="/blog/horno-pizza" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Blog
               </Link>
-              <a href="#contacto" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+              <Link to="/contacto" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Contacto
-              </a>
+              </Link>
             </nav>
 
             {/* Teléfono - oculto en móvil */}
@@ -143,13 +143,13 @@ const Header = () => {
                   >
                     Blog
                   </Link>
-                  <a 
-                    href="#contacto" 
+                  <Link 
+                    to="/contacto" 
                     onClick={closeMobileMenu}
                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
                   >
                     Contacto
-                  </a>
+                  </Link>
                 </div>
               </nav>
 
