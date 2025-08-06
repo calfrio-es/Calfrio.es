@@ -43,11 +43,11 @@ const Header = () => {
               <Link to="/inicio" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Inicio
               </Link>
-              <Link to="/productos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
-                Productos
-              </Link>
               <Link to="/services" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Servicios
+              </Link>
+              <Link to="/productos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+                Productos
               </Link>
               <Link to="/blog/horno-pizza" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Blog
@@ -123,18 +123,18 @@ const Header = () => {
                     Inicio
                   </Link>
                   <Link 
-                    to="/productos" 
-                    onClick={closeMobileMenu}
-                    className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
-                  >
-                    Productos
-                  </Link>
-                  <Link 
                     to="/services" 
                     onClick={closeMobileMenu}
                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
                   >
                     Servicios
+                  </Link>
+                  <Link 
+                    to="/productos" 
+                    onClick={closeMobileMenu}
+                    className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                  >
+                    Productos
                   </Link>
                   <Link 
                     to="/blog/horno-pizza" 

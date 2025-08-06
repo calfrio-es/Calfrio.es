@@ -69,7 +69,7 @@ const MantenimientoServicios = () => {
         {/* Bottom Row - Services and Image */}
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           {/* Left Column - Services List */}
-          <div className="space-y-4">
+          <div className="space-y-4 order-2 lg:order-1">
             {services.map((service, index) => (
               <div key={service.id} className={`pb-4 ${index !== services.length - 1 ? 'border-b border-gray-200' : ''}`}>
                 <div className="flex items-start space-x-4">
@@ -95,7 +95,7 @@ const MantenimientoServicios = () => {
           </div>
 
           {/* Right Column - Image with Overlay */}
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
             <div className="relative h-full">
               <img 
                 src={hero3} 
@@ -103,8 +103,8 @@ const MantenimientoServicios = () => {
                 className="w-full h-[200px] lg:h-full object-cover rounded-lg"
               />
               
-                             {/* Stats Overlay */}
-               <div className="absolute bottom-2 right-2 lg:bottom-4 lg:right-4 bg-white rounded-lg p-2 lg:p-4 shadow-lg max-w-[200px] lg:max-w-xs">
+              {/* Stats Overlay */}
+              <div className="absolute bottom-2 right-2 lg:bottom-4 lg:right-4 bg-white rounded-lg p-2 lg:p-4 shadow-lg max-w-[200px] lg:max-w-xs">
                 <div className="flex items-center mb-1 lg:mb-2">
                   <div className="w-4 h-4 lg:w-6 lg:h-6 bg-cyan-400 rounded-full flex items-center justify-center mr-1 lg:mr-2">
                     <svg className="w-2 h-2 lg:w-3 lg:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
