@@ -20,14 +20,6 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     },
     {
       id: 1,
-      nombre: 'Accesorios de Lavado',
-      imagen: cesta15platos,
-      color: 'bg-blue-500',
-      badge: null,
-      slug: 'accesorios-lavado'
-    },
-    {
-      id: 2,
       nombre: 'Abrillantadoras Cubiertos',
       imagen: secadorabrillantadora3000ud,
       color: 'bg-yellow-500',
@@ -35,7 +27,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
       slug: 'abrillantadoras-cubiertos'
     },
     {
-      id: 3,
+      id: 2,
       nombre: 'Lavavajillas',
       imagen: lavaobjetos445cm,
       color: 'bg-cyan-500',
@@ -43,7 +35,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
       slug: 'lavavajillas'
     },
     {
-      id: 4,
+      id: 3,
       nombre: 'Abatidores',
       imagen: abatidor10bandejas,
       color: 'bg-indigo-500',
@@ -51,12 +43,20 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
       slug: 'abatidores'
     },
     {
-      id: 5,
+      id: 4,
       nombre: 'Armarios refrigeradores',
       imagen: armariogn21inoxidable,
       color: 'bg-green-500',
       badge: null,
       slug: 'armarios-refrigeradores'
+    },
+    {
+      id: 5,
+      nombre: 'Accesorios de Lavado',
+      imagen: cesta15platos,
+      color: 'bg-blue-500',
+      badge: null,
+      slug: 'accesorios-lavado'
     }
   ];
 
@@ -86,7 +86,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
             Explora nuestros productos por categoría
           </p>
         </div>
-        <div className="flex overflow-x-auto gap-10 pb-4 scrollbar-hide justify-center">
+        <div className="flex overflow-x-auto gap-10 pb-4 scrollbar-hide justify-start md:justify-center">
           {categorias.map((categoria) => (
             <div 
               key={categoria.id} 
