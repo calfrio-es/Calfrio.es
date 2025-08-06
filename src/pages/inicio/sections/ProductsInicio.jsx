@@ -15,14 +15,6 @@ const ProductsInicio = () => {
   // Productos destacados para mostrar en la animación
   const productosDestacados = [
     {
-      id: 1,
-      name: "Cesta 15 Platos",
-      category: "Accesorios de Lavado",
-      description: "Cesta para 15 platos de 500 x 500 x 100h mm",
-      image: cesta15platos,
-      slug: "cesta-15-platos"
-    },
-    {
       id: 10,
       name: "Secadora Abrillantadora 3000 ud/hora",
       category: "Abrillantadoras Cubiertos",

@@ -35,7 +35,9 @@ body {
 /* Animación más rápida para móviles */
 @media (max-width: 768px) {
   .animate-scroll-left {
-    animation: scroll-left 35s linear infinite;
+    animation: none;
+    overflow-x: auto;
+    scroll-behavior: smooth;
   }
 }
 
