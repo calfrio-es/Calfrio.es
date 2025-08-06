@@ -78,7 +78,7 @@ const Services = () => {
               className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:bg-white border border-gray-100"
             >
               <div className="flex items-center mb-4">
-                <div className="bg-cyan-400 p-3 rounded-lg text-white mr-4">
+                <div className="bg-transparent p-3 rounded-lg text-gray-800 mr-4 border-2 border-cyan-400">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -98,7 +98,7 @@ const Services = () => {
             </p>
             <Link 
               to="/services" 
-              className="inline-flex items-center px-6 py-3 bg-cyan-400 text-white font-medium rounded-lg hover:bg-cyan-500 transition-colors duration-300"
+              className="inline-flex items-center px-6 py-3 bg-transparent text-gray-800 font-medium rounded-lg border-2 border-cyan-400 hover:bg-cyan-400 hover:text-white transition-colors duration-300"
             >
               Ver Todos los Servicios
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

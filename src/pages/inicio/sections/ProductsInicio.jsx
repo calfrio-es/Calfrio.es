@@ -79,7 +79,7 @@ const ProductsInicio = () => {
             <div className="text-center mb-8">
               <button 
                 onClick={() => navigate('/productos')}
-                className="inline-flex items-center px-6 py-2 bg-cyan-400 text-white font-semibold rounded-lg hover:bg-cyan-500 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm"
+                className="inline-flex items-center px-6 py-2 bg-transparent text-gray-800 font-semibold rounded-lg border-2 border-cyan-400 hover:bg-cyan-400 hover:text-white transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm"
               >
                 Ver todos los productos
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

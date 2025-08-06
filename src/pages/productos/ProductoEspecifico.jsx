@@ -239,11 +239,11 @@ const ProductoEspecifico = () => {
           </div>
 
           {/* Contenido principal */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             {/* Imagen del producto - IZQUIERDA */}
             <div className="flex items-start justify-center">
               <div className="relative w-full max-w-md">
-                <div className="bg-white rounded-xl shadow-xl overflow-hidden h-96">
+                <div className="bg-white rounded-xl shadow-xl overflow-hidden h-80 lg:h-96">
                   <img 
                     src={producto.imagen} 
                     alt={producto.name}
@@ -254,7 +254,7 @@ const ProductoEspecifico = () => {
             </div>
 
             {/* Información del producto - DERECHA */}
-            <div className="flex flex-col h-96">
+            <div className="flex flex-col min-h-80 lg:h-96">
               {/* Categoría */}
               <div>
                 <span className="inline-block bg-cyan-100 text-cyan-800 px-2 py-1 rounded-full text-xs font-medium">
@@ -264,14 +264,14 @@ const ProductoEspecifico = () => {
 
               {/* Título */}
               <div className="mt-4">
-                <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-1">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-1">
                   {producto.name}
                 </h1>
               </div>
 
               {/* Descripción */}
               <div className="mt-4">
-                <h2 className="text-lg font-semibold text-gray-800 mb-2">Descripción</h2>
+                <h2 className="text-base lg:text-lg font-semibold text-gray-800 mb-2">Descripción</h2>
                 <p className="text-gray-700 leading-relaxed text-sm">
                   {producto.description}
                 </p>
@@ -279,7 +279,7 @@ const ProductoEspecifico = () => {
 
               {/* Especificaciones */}
               <div className="mt-4 space-y-3">
-                <h2 className="text-lg font-semibold text-gray-800">Especificaciones</h2>
+                <h2 className="text-base lg:text-lg font-semibold text-gray-800">Especificaciones</h2>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div className="bg-gray-50 p-3 rounded-lg">
@@ -319,47 +319,47 @@ const ProductoEspecifico = () => {
           </div>
         </div>
 
-                 {/* Productos Relacionados - Fuera del contenedor estrecho */}
-         {productosRelacionados.length > 0 && (
-           <div className="mt-12 border-t border-gray-200 pt-8">
-             <div className="container mx-auto max-w-6xl px-4">
-               <div className="text-center mb-8">
-                 <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                   Otros productos de {producto.categoryName}
-                 </h2>
-                 <p className="text-gray-600 text-sm">
-                   Explora más opciones de la misma categoría
-                 </p>
-               </div>
-               
-               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
-                 {productosRelacionados.map((productoRel) => (
-                   <div 
-                     key={productoRel.slug}
-                     className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 group w-full max-w-xs"
-                     onClick={() => handleProductoClick(productoRel.slug)}
-                   >
-                     <div className="h-48 overflow-hidden">
-                       <img 
-                         src={productoRel.imagen} 
-                         alt={productoRel.name}
-                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                       />
-                     </div>
-                     <div className="p-4">
-                       <h3 className="font-semibold text-gray-800 text-sm mb-2 group-hover:text-cyan-600 transition-colors line-clamp-2">
-                         {productoRel.name}
-                       </h3>
-                       <p className="text-gray-600 text-xs">
-                         {productoRel.description}
-                       </p>
-                     </div>
-                   </div>
-                 ))}
-               </div>
-             </div>
-           </div>
-         )}
+        {/* Productos Relacionados - Fuera del contenedor estrecho */}
+        {productosRelacionados.length > 0 && (
+          <div className="mt-12 border-t border-gray-200 pt-8">
+            <div className="container mx-auto max-w-6xl px-4">
+              <div className="text-center mb-8">
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                  Otros productos de {producto.categoryName}
+                </h2>
+                <p className="text-gray-600 text-sm">
+                  Explora más opciones de la misma categoría
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
+                {productosRelacionados.map((productoRel) => (
+                  <div 
+                    key={productoRel.slug}
+                    className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 group w-full max-w-xs"
+                    onClick={() => handleProductoClick(productoRel.slug)}
+                  >
+                    <div className="h-48 overflow-hidden">
+                      <img 
+                        src={productoRel.imagen} 
+                        alt={productoRel.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-semibold text-gray-800 text-sm mb-2 group-hover:text-cyan-600 transition-colors line-clamp-2">
+                        {productoRel.name}
+                      </h3>
+                      <p className="text-gray-600 text-xs">
+                        {productoRel.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
       <Footer />
       <ButtonWhatsap />
