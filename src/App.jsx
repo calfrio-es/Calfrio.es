@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Inicio from './pages/inicio/Inicio';
 import Services from './pages/services/Servicios';
 import Productos from './pages/productos/Productos';
@@ -16,9 +16,22 @@ import LavavajillasCopasHosteleria from './pages/blog/LavavajillasCopasHosteleri
 import LavavajillasDeBar from './pages/blog/LavavajillasDeBar';
 import TiposLavavajillasHosteleria from './pages/blog/TiposLavavajillasHosteleria';
 import ReparacionMaquinariaHosteleria from './pages/blog/reparacionmaquinariahosteleria';
+
+// Componente para manejar el scroll automático
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App w-full min-h-screen">
         <Routes>
           <Route path="/" element={<Navigate to="/inicio" replace />} />
