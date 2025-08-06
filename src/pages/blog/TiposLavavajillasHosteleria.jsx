@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ButtonWhatsap from '../../components/layout/ButtonWhatsap';
+import BlogsRelacionados from './BlogsRelacionados';
 import tiposLavavajillasHosteleriaImg from '../../assets/img/tiposlavavajillashosteleria.jpg';
 
 const TiposLavavajillasHosteleria = () => {
@@ -28,38 +29,78 @@ const TiposLavavajillasHosteleria = () => {
             <nav className="space-y-2">
               <ul className="space-y-1 text-sm">
                 <li>
-                  <Link to="#funcionamiento" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('funcionamiento');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Cómo Funciona
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#tipos" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('tipos');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Tipos de Lavavajillas
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#caracteristicas" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('caracteristicas');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Características Claves
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#beneficios" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('beneficios');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Beneficios
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#mantenimiento" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('mantenimiento');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Mantenimiento
-                  </Link>
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -249,84 +290,7 @@ const TiposLavavajillasHosteleria = () => {
 
         {/* Columna derecha - un poco más grande - oculta en móviles */}
         <div className="hidden lg:block w-2/6">
-          <div className="p-6">
-            {/* Mini título */}
-            <h3 className="text-sm text-gray-500 mb-6">
-              También te puede interesar
-            </h3>
-
-            {/* Sección 1: Lavavajillas de Bar */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-de-bar" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas de Bar
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 2: Lavavajillas de Copas para Hostelería */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-copas-hosteleria" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas de Copas para Hostelería
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 3: Lavavajillas para Hostelería */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-hosteleria" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas para Hostelería
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 4: Lavavajillas Industriales */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-industriales" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas Industriales
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 5: Lavavajillas SMEG */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-smeg" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas SMEG
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-          </div>
+          <BlogsRelacionados />
         </div>
       </div>
       <Footer />

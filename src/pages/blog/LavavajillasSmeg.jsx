@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ButtonWhatsap from '../../components/layout/ButtonWhatsap';
+import BlogsRelacionados from './BlogsRelacionados';
 import lavavajillasSmegImg from '../../assets/img/lavavajillasmeg.jpg';
 
 const LavavajillasSmeg = () => {
@@ -28,31 +29,63 @@ const LavavajillasSmeg = () => {
             <nav className="space-y-2">
               <ul className="space-y-1 text-sm">
                 <li>
-                  <Link to="#ventajas" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('ventajas');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Ventajas de un Lavavajillas SMEG
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#mantenimiento" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('mantenimiento');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Mantenimiento del Lavavajillas SMEG
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#elegir" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('elegir');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     ¿Por qué elegir un Lavavajillas SMEG?
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#conclusion" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                  <button
+                    onClick={() => {
+                      const element = document.getElementById('conclusion');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                  >
                     <span className="text-black !text-black mr-2">•</span>
                     Solución de Lavado Potente
-                  </Link>
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -162,69 +195,7 @@ const LavavajillasSmeg = () => {
 
         {/* Columna derecha - un poco más grande - oculta en móviles */}
         <div className="hidden lg:block w-2/6">
-          <div className="p-6">
-            {/* Mini título */}
-            <h3 className="text-sm text-gray-500 mb-6">
-              También te puede interesar
-            </h3>
-
-            {/* Sección 1: Lavavajillas Industriales */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-industriales" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas Industriales
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 2: Hornos para Pizza */}
-            <div className="mb-8 relative">
-              <Link to="/blog/horno-pizza" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Los Hornos para Pizza
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 3: Fogones de Gas */}
-            <div className="mb-8 relative">
-              <Link to="/blog/fogones-gas" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Los Fogones de Gas
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 4: Cocinas de Gas */}
-            <div className="mb-8 relative">
-              <Link to="/blog/cocinas-gas" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Cocinas de Gas Profesionales
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-          </div>
+          <BlogsRelacionados />
         </div>
       </div>
       <Footer />

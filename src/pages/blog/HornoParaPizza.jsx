@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ButtonWhatsap from '../../components/layout/ButtonWhatsap';
+import BlogsRelacionados from './BlogsRelacionados';
 import hornoParaPizzaImg from '../../assets/img/hornoparapizza.jpg';
 
 const HornoParaPizza = () => {
@@ -28,38 +29,78 @@ const HornoParaPizza = () => {
             <nav className="space-y-2">
               <ul className="space-y-1 text-sm">
                 <li>
-                  <Link to="#ventajas" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                                     <button 
+                     onClick={() => {
+                       const element = document.getElementById('ventajas');
+                       if (element) {
+                         element.scrollIntoView({ behavior: 'smooth' });
+                       }
+                     }}
+                     className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                   >
                     <span className="text-black !text-black mr-2">•</span>
                     Ventajas de Usar un Horno para Pizza
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#consejos" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                                     <button 
+                     onClick={() => {
+                       const element = document.getElementById('consejos');
+                       if (element) {
+                         element.scrollIntoView({ behavior: 'smooth' });
+                       }
+                     }}
+                     className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                   >
                     <span className="text-black !text-black mr-2">•</span>
                     Consejos para Usar un Horno para Pizza
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#problemas" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                                     <button 
+                     onClick={() => {
+                       const element = document.getElementById('problemas');
+                       if (element) {
+                         element.scrollIntoView({ behavior: 'smooth' });
+                       }
+                     }}
+                     className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                   >
                     <span className="text-black !text-black mr-2">•</span>
                     Problemas Comunes en Electrodomésticos
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#servicios" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                                     <button 
+                     onClick={() => {
+                       const element = document.getElementById('servicios');
+                       if (element) {
+                         element.scrollIntoView({ behavior: 'smooth' });
+                       }
+                     }}
+                     className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                   >
                     <span className="text-black !text-black mr-2">•</span>
                     Servicio Técnico
-                  </Link>
+                  </button>
                 </li>
                 <li className="border-b border-gray-300 pb-1"></li>
                 <li>
-                  <Link to="#conclusion" className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center">
+                                     <button 
+                     onClick={() => {
+                       const element = document.getElementById('conclusion');
+                       if (element) {
+                         element.scrollIntoView({ behavior: 'smooth' });
+                       }
+                     }}
+                     className="text-black !text-black hover:text-cyan-400 transition-colors duration-300 block flex items-center w-full text-left cursor-pointer"
+                   >
                     <span className="text-black !text-black mr-2">•</span>
                     Disfruta de Pizzas Perfectas
-                  </Link>
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -195,177 +236,10 @@ const HornoParaPizza = () => {
           </div>
         </div>
 
-        {/* Columna derecha - un poco más grande - oculta en móviles */}
-        <div className="hidden lg:block w-2/6">
-          <div className="p-6">
-            {/* Mini título */}
-            <h3 className="text-sm text-gray-500 mb-6">
-              También te puede interesar
-            </h3>
-
-            {/* Sección 1: Lavavajillas Industriales */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-industriales" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas Industriales
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 2: Lavavajillas SMEG */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-smeg" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas SMEG
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 3: Lavavajillas para Hostelería */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-hosteleria" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas para Hostelería
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 4: Lavavajillas de Copas para Hostelería */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-copas-hosteleria" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas de Copas para Hostelería
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 5: Lavavajillas de Bar */}
-            <div className="mb-8 relative">
-              <Link to="/blog/lavavajillas-de-bar" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Lavavajillas de Bar
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 6: Tipos de Lavavajillas de Hostelería */}
-            <div className="mb-8 relative">
-              <Link to="/blog/tipos-lavavajillas-hosteleria" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Tipos de Lavavajillas de Hostelería
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 7: Hornos Industriales */}
-            <div className="mb-8 relative">
-              <Link to="/blog/fogones-gas" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Los Fogones de Gas
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 2: Mantenimiento */}
-            <div className="mb-8 relative">
-              <Link to="/blog/cocinas-gas" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Cocinas de Gas Profesionales
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 3: Recetas */}
-            <div className="mb-8 relative">
-              <Link to="/blog/cocina-gas-butano" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Cocina de Gas Butano
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 4: Equipamiento */}
-            <div className="mb-8 relative">
-              <Link to="/blog/horno-gas" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  El Horno de Gas
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-
-            {/* Línea negra separadora */}
-            <div className="border-t-2 border-black mb-8"></div>
-
-            {/* Sección 5: Reparación de Maquinaria de Hostelería */}
-            <div className="mb-8 relative">
-              <Link to="/blog/reparacion-maquinaria-hosteleria" className="block">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-cyan-400 transition-colors duration-300">
-                  Reparación de Maquinaria de Hostelería
-                </h2>
-                <div className="absolute bottom-0 right-0 text-black text-3xl font-bold">
-                  →
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
+                 {/* Columna derecha - un poco más grande - oculta en móviles */}
+         <div className="hidden lg:block w-2/6">
+           <BlogsRelacionados />
+         </div>
       </div>
       <Footer />
       <ButtonWhatsap />
