@@ -2,7 +2,7 @@ import React from 'react';
 import { getCategories } from '../../../data/products';
 
 // Importar iconos de Lucide React
-import { Package, Sparkles, Droplets, Snowflake, Box, CircleDot } from 'lucide-react';
+import { Package, Sparkles, WashingMachine, Snowflake, Refrigerator, SoapDispenserDroplet } from 'lucide-react';
 
 const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
   const categorias = [
@@ -27,7 +27,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 2,
       nombre: 'Lavavajillas',
-      icono: Droplets,
+      icono: WashingMachine,
       color: 'bg-cyan-500',
       badge: null,
       slug: 'lavavajillas',
@@ -45,7 +45,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 4,
       nombre: 'Refrigeradores',
-      icono: Box,
+      icono: Refrigerator,
       color: 'bg-green-500',
       badge: null,
       slug: 'armarios-refrigeradores',
@@ -54,7 +54,7 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
     {
       id: 5,
       nombre: 'Accesorios',
-      icono: CircleDot,
+      icono: SoapDispenserDroplet,
       color: 'bg-blue-500',
       badge: null,
       slug: 'accesorios-lavado',
@@ -97,26 +97,26 @@ const CategoriaProductos = ({ onCategoriaSelect, categoriaSeleccionada }) => {
       
       <div className="sticky top-16 z-40 bg-gray-50 border-b border-gray-200 shadow-sm py-2">
         <div className="container mx-auto max-w-7xl px-4">
-          <div className="flex overflow-x-auto gap-8 pb-2 scrollbar-hide justify-start md:justify-center">
+          <div className="flex overflow-x-auto gap-8 lg:gap-12 pb-2 scrollbar-hide justify-start md:justify-center">
             {categorias.map((categoria) => {
               const IconComponent = categoria.icono;
               return (
                 <div 
                   key={categoria.id} 
-                  className={`flex flex-col items-center group cursor-pointer flex-shrink-0 w-20 ${
+                  className={`flex flex-col items-center group cursor-pointer flex-shrink-0 w-20 lg:w-16 ${
                     categoriaSeleccionada === categoria.slug ? 'scale-110' : ''
                   }`}
                   onClick={() => handleCategoriaClick(categoria.slug)}
                 >
-                  <div className={`relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-white shadow-lg flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden ${
+                  <div className={`relative w-16 h-16 md:w-20 md:h-20 lg:w-14 lg:h-14 rounded-full bg-white shadow-lg flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl overflow-hidden ${
                     categoriaSeleccionada === categoria.slug ? 'shadow-xl bg-gray-50' : ''
                   }`}>
-                    <div className={`absolute inset-3 rounded-full border-2 border-cyan-300 flex items-center justify-center ${
+                    <div className={`absolute inset-3 lg:inset-2 rounded-full border-2 border-cyan-300 flex items-center justify-center ${
                       categoriaSeleccionada === categoria.slug ? 'bg-cyan-100' : 'bg-transparent'
                     }`}>
                       <IconComponent 
                         size={20}
-                        className={`transition-colors duration-300 ${
+                        className={`lg:w-4 lg:h-4 transition-colors duration-300 ${
                           categoriaSeleccionada === categoria.slug 
                             ? 'text-cyan-600 group-hover:text-cyan-700' 
                             : 'text-gray-600 group-hover:text-gray-800'

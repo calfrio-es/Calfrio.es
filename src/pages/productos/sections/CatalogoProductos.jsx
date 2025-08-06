@@ -122,11 +122,11 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
       setProductosFiltrados(productosConImagenes);
     } else {
       // Mostrar todos los productos si no hay categoría seleccionada o si se selecciona "todos"
-      const todosLosProductos = getProductsByCategory('accesorios-lavado')
-        .concat(getProductsByCategory('abrillantadoras-cubiertos'))
+      const todosLosProductos = getProductsByCategory('abrillantadoras-cubiertos')
         .concat(getProductsByCategory('lavavajillas'))
         .concat(getProductsByCategory('abatidores'))
-        .concat(getProductsByCategory('armarios-refrigeradores'));
+        .concat(getProductsByCategory('armarios-refrigeradores'))
+        .concat(getProductsByCategory('accesorios-lavado'));
       
       const productosConImagenes = todosLosProductos.map((producto) => ({
         ...producto,
