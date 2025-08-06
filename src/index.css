@@ -32,8 +32,11 @@ body {
   animation: scroll-left 30s linear infinite;
 }
 
-.animate-scroll-left:hover {
-  animation-play-state: paused;
+/* Animación más rápida para móviles */
+@media (max-width: 768px) {
+  .animate-scroll-left {
+    animation: scroll-left 15s linear infinite;
+  }
 }
 
 /* Utilidad para truncar texto */
