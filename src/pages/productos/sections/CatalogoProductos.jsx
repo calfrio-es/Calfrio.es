@@ -177,7 +177,6 @@ const CatalogoProductos = ({ categoriaSeleccionada }) => {
                  </span>
                </div>
                             <h3 className="text-sm font-semibold text-gray-800 mb-1 group-hover:text-cyan-600 transition-colors">{producto.name}</h3>
-                            <p className="text-xs text-gray-600 mb-1">Marca: {producto.marca}</p>
                             <p className="text-xs text-gray-500">Medidas: {producto.medidas}</p>
                             {producto.capacity && (
                               <p className="text-xs text-gray-500">Capacidad: {producto.capacity}</p>

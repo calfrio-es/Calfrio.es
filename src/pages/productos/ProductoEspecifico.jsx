@@ -231,11 +231,14 @@ const ProductoEspecifico = () => {
                     <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">{producto.name}</span>
+                    <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">
+                      {producto.name.length > 50 ? `${producto.name.substring(0, 50)}...` : producto.name}
+                    </span>
                   </div>
                 </li>
               </ol>
             </nav>
+            <div className="border-t border-gray-200 mt-4"></div>
           </div>
 
           {/* Contenido principal */}
@@ -332,7 +335,7 @@ const ProductoEspecifico = () => {
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-6 justify-items-center">
                 {productosRelacionados.map((productoRel) => (
                   <div 
                     key={productoRel.slug}
@@ -361,6 +364,7 @@ const ProductoEspecifico = () => {
           </div>
         )}
       </div>
+      <div className="pb-8"></div>
       <Footer />
       <ButtonWhatsap />
     </div>
