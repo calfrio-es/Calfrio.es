@@ -30,6 +30,13 @@ import FreidoraDobleIndustrial from './pages/blog/FreidoraDobleIndustrial';
 import FreidoraGrandeIndustrial from './pages/blog/FreidoraGrandeIndustrial';
 import FreidoraIndustrialHosteleria from './pages/blog/FreidoraIndustrialHosteleria';
 import FreidoraCincoLitros from './pages/blog/FreidoraCincoLitros';
+import ReparacionLavavajillasPalma from './pages/blog/ReparacionLavavajillasPalma';
+import ReparacionLavavajillasIndustriales from './pages/blog/ReparaciónLavavajillasIndustriales';
+import TecnicosDeLavavajillas from './pages/blog/TécnicosDeLavavajillas';
+import ReparacionFreidorasIndustriales from './pages/blog/ReparacionFreidorasIndustriales';
+import RepararFreidoraPalmaDeMallorca from './pages/blog/RepararFreidoraPalmaDeMallorca';
+import ReparacionCocinaIndustrial from './pages/blog/ReparacionCocinaIndustrial';
+import ReparacionDeCampanasExtractoras from './pages/blog/ReparacionDeCampanasExtractoras';
 
 // Componente para manejar el scroll automático
 function ScrollToTop() {
@@ -79,6 +86,13 @@ function App() {
           <Route path="/blog/freidora-grande-industrial" element={<FreidoraGrandeIndustrial />} />
           <Route path="/blog/freidora-industrial-hosteleria" element={<FreidoraIndustrialHosteleria />} />
           <Route path="/blog/freidora-cinco-litros" element={<FreidoraCincoLitros />} />
+          <Route path="/blog/reparacion-lavavajillas-palma" element={<ReparacionLavavajillasPalma />} />
+          <Route path="/blog/reparacion-lavavajillas-industriales" element={<ReparacionLavavajillasIndustriales />} />
+          <Route path="/blog/tecnicos-lavavajillas" element={<TecnicosDeLavavajillas />} />
+          <Route path="/blog/reparacion-freidoras-industriales" element={<ReparacionFreidorasIndustriales />} />
+          <Route path="/blog/reparar-freidora-palma" element={<RepararFreidoraPalmaDeMallorca />} />
+          <Route path="/blog/reparacion-cocina-industrial" element={<ReparacionCocinaIndustrial />} />
+          <Route path="/blog/reparacion-campanas-extractoras" element={<ReparacionDeCampanasExtractoras />} />
         </Routes>
       </div>
     </Router>
