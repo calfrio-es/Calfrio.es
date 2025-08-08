@@ -17,6 +17,19 @@ import LavavajillasCopasHosteleria from './pages/blog/LavavajillasCopasHosteleri
 import LavavajillasDeBar from './pages/blog/LavavajillasDeBar';
 import TiposLavavajillasHosteleria from './pages/blog/TiposLavavajillasHosteleria';
 import ReparacionMaquinariaHosteleria from './pages/blog/reparacionmaquinariahosteleria';
+import LavavazosIndustrial from './pages/blog/LavavazosIndustrial';
+import LavavasosBar from './pages/blog/LavavasosBar';
+import LavavasosHosteleria from './pages/blog/LavavasosHosteleria';
+import CocinaIndustrial from './pages/blog/CocinaIndustrial';
+import CocinaDeGasHorno from './pages/blog/CocinaDeGasHorno';
+import HornoRational from './pages/blog/HornoRational';
+import PlanchasDeCocina from './pages/blog/PlanchasDeCocina';
+import PlanchasElectricas from './pages/blog/PlanchasElectricas';
+import PlanchasDeAsarDeGas from './pages/blog/PlanchasDeAsarDeGas';
+import FreidoraDobleIndustrial from './pages/blog/FreidoraDobleIndustrial';
+import FreidoraGrandeIndustrial from './pages/blog/FreidoraGrandeIndustrial';
+import FreidoraIndustrialHosteleria from './pages/blog/FreidoraIndustrialHosteleria';
+import FreidoraCincoLitros from './pages/blog/FreidoraCincoLitros';
 
 // Componente para manejar el scroll automático
 function ScrollToTop() {
@@ -53,6 +66,19 @@ function App() {
           <Route path="/blog/lavavajillas-de-bar" element={<LavavajillasDeBar />} />
           <Route path="/blog/tipos-lavavajillas-hosteleria" element={<TiposLavavajillasHosteleria />} />
           <Route path="/blog/reparacion-maquinaria-hosteleria" element={<ReparacionMaquinariaHosteleria />} />
+          <Route path="/blog/lavavasos-industrial" element={<LavavazosIndustrial />} />
+          <Route path="/blog/lavavasos-bar" element={<LavavasosBar />} />
+          <Route path="/blog/lavavasos-hosteleria" element={<LavavasosHosteleria />} />
+          <Route path="/blog/cocina-industrial" element={<CocinaIndustrial />} />
+          <Route path="/blog/cocina-gas-horno" element={<CocinaDeGasHorno />} />
+          <Route path="/blog/horno-rational" element={<HornoRational />} />
+          <Route path="/blog/planchas-cocina" element={<PlanchasDeCocina />} />
+          <Route path="/blog/planchas-electricas" element={<PlanchasElectricas />} />
+          <Route path="/blog/planchas-asar-gas" element={<PlanchasDeAsarDeGas />} />
+          <Route path="/blog/freidora-doble-industrial" element={<FreidoraDobleIndustrial />} />
+          <Route path="/blog/freidora-grande-industrial" element={<FreidoraGrandeIndustrial />} />
+          <Route path="/blog/freidora-industrial-hosteleria" element={<FreidoraIndustrialHosteleria />} />
+          <Route path="/blog/freidora-cinco-litros" element={<FreidoraCincoLitros />} />
         </Routes>
       </div>
     </Router>

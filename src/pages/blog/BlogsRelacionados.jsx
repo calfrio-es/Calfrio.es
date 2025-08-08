@@ -42,6 +42,71 @@ const BlogsRelacionados = () => {
       title: 'Tipos de Lavavajillas de Hostelería'
     },
     {
+      id: 'lavavasos-industrial',
+      path: '/blog/lavavasos-industrial',
+      title: 'Lavavasos Industrial'
+    },
+    {
+      id: 'lavavasos-bar',
+      path: '/blog/lavavasos-bar',
+      title: 'Lavavasos para Bar'
+    },
+    {
+      id: 'lavavasos-hosteleria',
+      path: '/blog/lavavasos-hosteleria',
+      title: 'Lavavasos Hostelería'
+    },
+    {
+      id: 'cocina-industrial',
+      path: '/blog/cocina-industrial',
+      title: 'Cocina Industrial'
+    },
+    {
+      id: 'cocina-gas-horno',
+      path: '/blog/cocina-gas-horno',
+      title: 'Cocina de Gas con Horno'
+    },
+    {
+      id: 'horno-rational',
+      path: '/blog/horno-rational',
+      title: 'Horno Rational'
+    },
+    {
+      id: 'planchas-cocina',
+      path: '/blog/planchas-cocina',
+      title: 'Planchas de Cocina'
+    },
+    {
+      id: 'planchas-electricas',
+      path: '/blog/planchas-electricas',
+      title: 'Planchas Eléctricas'
+    },
+    {
+      id: 'planchas-asar-gas',
+      path: '/blog/planchas-asar-gas',
+      title: 'Planchas de Asar de Gas'
+    },
+    {
+      id: 'freidora-doble-industrial',
+      path: '/blog/freidora-doble-industrial',
+      title: 'Freidora Doble Industrial'
+    },
+    {
+      id: 'freidora-grande-industrial',
+      path: '/blog/freidora-grande-industrial',
+      title: 'Freidora Grande Industrial'
+    },
+    {
+      id: 'freidora-industrial-hosteleria',
+      path: '/blog/freidora-industrial-hosteleria',
+      title: 'Freidora Industrial para Hostelería'
+    },
+    {
+      id: 'freidora-cinco-litros',
+      path: '/blog/freidora-cinco-litros',
+      title: 'Freidora Industrial de 5 Litros'
+    },
+    {
       id: 'fogones-gas',
       path: '/blog/fogones-gas',
       title: 'Los Fogones de Gas'
