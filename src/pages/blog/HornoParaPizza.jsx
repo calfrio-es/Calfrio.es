@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ButtonWhatsap from '../../components/layout/ButtonWhatsap';
-import BlogsRelacionados from './BlogRelacionadosReparaciones';
+import BlogsRelacionados from './BlogsRelacionados';
 import hornoParaPizzaImg from '../../assets/img/hornoparapizza.jpg';
 
 const HornoParaPizza = () => {
