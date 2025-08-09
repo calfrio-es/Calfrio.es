@@ -40,6 +40,26 @@ const BlogRelacionadosReparaciones = () => {
       id: 'reparacion-campanas-extractoras',
       path: '/blog/reparacion-campanas-extractoras',
       title: 'Reparación de Campanas Extractoras Industriales en Palma de Mallorca'
+    },
+    {
+      id: 'reparacion-equipos-cocina',
+      path: '/blog/reparacion-equipos-cocina',
+      title: 'Reparación de Equipos de Cocina Industrial en Palma de Mallorca'
+    },
+    {
+      id: 'reparacion-planchas',
+      path: '/blog/reparacion-planchas',
+      title: 'Reparación de Planchas Industriales en Palma de Mallorca'
+    },
+    {
+      id: 'reparacion-vitrinas',
+      path: '/blog/reparacion-vitrinas',
+      title: 'Reparación de Vitrinas Industriales en Palma de Mallorca'
+    },
+    {
+      id: 'reparacion-congeladores',
+      path: '/blog/reparacion-congeladores',
+      title: 'Reparación de Congeladores Industriales en Palma de Mallorca'
     }
   ];
 

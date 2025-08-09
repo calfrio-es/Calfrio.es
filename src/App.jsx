@@ -37,6 +37,10 @@ import ReparacionFreidorasIndustriales from './pages/blog/ReparacionFreidorasInd
 import RepararFreidoraPalmaDeMallorca from './pages/blog/RepararFreidoraPalmaDeMallorca';
 import ReparacionCocinaIndustrial from './pages/blog/ReparacionCocinaIndustrial';
 import ReparacionDeCampanasExtractoras from './pages/blog/ReparacionDeCampanasExtractoras';
+import ReparacionDeEquiposCocina from './pages/blog/ReparacionDeEquiposCocina';
+import ReparacionDePlanchas from './pages/blog/ReparacionDePlanchas';
+import ReparacionDeVitrinas from './pages/blog/ReparacionDeVitrinas';
+import ReparacionDeCongeladores from './pages/blog/ReparacionDeCongeladores';
 
 // Componente para manejar el scroll automático
 function ScrollToTop() {
@@ -93,6 +97,10 @@ function App() {
           <Route path="/blog/reparar-freidora-palma" element={<RepararFreidoraPalmaDeMallorca />} />
           <Route path="/blog/reparacion-cocina-industrial" element={<ReparacionCocinaIndustrial />} />
           <Route path="/blog/reparacion-campanas-extractoras" element={<ReparacionDeCampanasExtractoras />} />
+          <Route path="/blog/reparacion-equipos-cocina" element={<ReparacionDeEquiposCocina />} />
+          <Route path="/blog/reparacion-planchas" element={<ReparacionDePlanchas />} />
+          <Route path="/blog/reparacion-vitrinas" element={<ReparacionDeVitrinas />} />
+          <Route path="/blog/reparacion-congeladores" element={<ReparacionDeCongeladores />} />
         </Routes>
       </div>
     </Router>
