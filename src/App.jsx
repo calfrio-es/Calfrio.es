@@ -41,6 +41,7 @@ import ReparacionDeEquiposCocina from './pages/blog/ReparacionDeEquiposCocina';
 import ReparacionDePlanchas from './pages/blog/ReparacionDePlanchas';
 import ReparacionDeVitrinas from './pages/blog/ReparacionDeVitrinas';
 import ReparacionDeCongeladores from './pages/blog/ReparacionDeCongeladores';
+import Barcos from './pages/barcos/Barcos';
 
 // Componente para manejar el scroll automático
 function ScrollToTop() {
@@ -63,6 +64,7 @@ function App() {
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/services" element={<Services />} />
           <Route path="/productos" element={<Productos />} />
+          <Route path="/barcos" element={<Barcos />} />
           <Route path="/producto/:slug" element={<ProductoEspecifico />} />
           <Route path="/contacto" element={<Contactanos />} />
           <Route path="/blog/horno-pizza" element={<HornoParaPizza />} />

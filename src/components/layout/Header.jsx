@@ -54,6 +54,9 @@ const Header = () => {
               <Link to="/productos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Productos
               </Link>
+              <Link to="/barcos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+                Barcos
+              </Link>
               <Link to="/blog/horno-pizza" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Blog
               </Link>
@@ -140,6 +143,13 @@ const Header = () => {
                      className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
                    >
                      Productos
+                   </Link>
+                   <Link 
+                     to="/barcos" 
+                     onClick={closeMobileMenu}
+                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                   >
+                     Barcos
                    </Link>
                    
                    {/* Acordeón Blog para móvil */}
