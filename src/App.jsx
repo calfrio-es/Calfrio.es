@@ -113,6 +113,8 @@ function App() {
           <Route path="/blog/reparacion-planchas" element={<ReparacionDePlanchas />} />
           <Route path="/blog/reparacion-vitrinas" element={<ReparacionDeVitrinas />} />
           <Route path="/blog/reparacion-congeladores" element={<ReparacionDeCongeladores />} />
+          {/* Ruta catch-all para URLs inexistentes - redirige a la página principal */}
+          <Route path="*" element={<Navigate to="/inicio" replace />} />
         </Routes>
       </div>
     </Router>
