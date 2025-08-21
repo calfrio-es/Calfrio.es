@@ -42,6 +42,11 @@ import ReparacionDePlanchas from './pages/blog/ReparacionDePlanchas';
 import ReparacionDeVitrinas from './pages/blog/ReparacionDeVitrinas';
 import ReparacionDeCongeladores from './pages/blog/ReparacionDeCongeladores';
 import Barcos from './pages/barcos/Barcos';
+import Mantenimiento from './pages/barcos/Mantenimiento';
+import Limpieza from './pages/barcos/Limpieza';
+import CostoManutencionYate from './pages/barcos/CostoManutencionYate';
+import CostoManutencionYate30M from './pages/barcos/CostoManutencionYate30M';
+import CostoManutencionYateLujo from './pages/barcos/CostoManutencionYateLujo';
 
 // Componente para manejar el scroll automático
 function ScrollToTop() {
@@ -64,7 +69,12 @@ function App() {
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/services" element={<Services />} />
           <Route path="/productos" element={<Productos />} />
-          <Route path="/barcos" element={<Barcos />} />
+          <Route path="/servicio-mantenimiento-limpieza-yates-barcos-palma-mallorca" element={<Barcos />} />
+          <Route path="/mantenimiento-de-barcos-yates-mallorca" element={<Mantenimiento />} />
+          <Route path="/limpieza-de-barcos-yates-mallorca" element={<Limpieza />} />
+          <Route path="/costos-mantenimiento-yates-mallorca" element={<CostoManutencionYate />} />
+          <Route path="/costos-mantenimiento-yates-30m-mallorca" element={<CostoManutencionYate30M />} />
+          <Route path="/costos-mantenimiento-yates-lujo-mallorca" element={<CostoManutencionYateLujo />} />
           <Route path="/producto/:slug" element={<ProductoEspecifico />} />
           <Route path="/contacto" element={<Contactanos />} />
           <Route path="/blog/horno-pizza" element={<HornoParaPizza />} />

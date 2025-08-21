@@ -54,7 +54,7 @@ const Header = () => {
               <Link to="/productos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Productos
               </Link>
-              <Link to="/barcos" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+              <Link to="/servicio-mantenimiento-limpieza-yates-barcos-palma-mallorca" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Barcos
               </Link>
               <Link to="/blog/horno-pizza" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
