@@ -57,6 +57,9 @@ const Header = () => {
               <Link to="/servicio-mantenimiento-limpieza-yates-barcos-palma-mallorca" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Barcos
               </Link>
+              <Link to="/cuartos-frios" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+                Cuartos Fríos
+              </Link>
               <Link to="/blog/horno-pizza" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Blog
               </Link>
@@ -150,6 +153,13 @@ const Header = () => {
                      className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
                    >
                      Barcos
+                   </Link>
+                   <Link 
+                     to="/cuartos-frios" 
+                     onClick={closeMobileMenu}
+                     className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
+                   >
+                     Cuartos Fríos
                    </Link>
                    
                    {/* Acordeón Blog para móvil */}

@@ -7,6 +7,16 @@ const BlogRelacionadosReparaciones = () => {
   // Lista completa de todos los blogs de reparaciones disponibles
   const todosLosBlogsReparaciones = [
     {
+      id: 'tecnico-freidoras-industriales',
+      path: '/blog/tecnico-freidoras-industriales',
+      title: 'Técnico en Freidoras Industriales en Madrid'
+    },
+    {
+      id: 'reparacion-maquinaria-hosteleria',
+      path: '/blog/reparacion-maquinaria-hosteleria',
+      title: 'Reparación de Maquinaria de Hostelería en Palma de Mallorca'
+    },
+    {
       id: 'reparacion-lavavajillas-palma',
       path: '/blog/reparacion-lavavajillas-palma',
       title: 'Reparación de Lavavajillas en Palma de Mallorca'

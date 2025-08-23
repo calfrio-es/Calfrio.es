@@ -41,12 +41,26 @@ import ReparacionDeEquiposCocina from './pages/blog/ReparacionDeEquiposCocina';
 import ReparacionDePlanchas from './pages/blog/ReparacionDePlanchas';
 import ReparacionDeVitrinas from './pages/blog/ReparacionDeVitrinas';
 import ReparacionDeCongeladores from './pages/blog/ReparacionDeCongeladores';
+import ReparacionDeMaquinariasHosteleria from './pages/blog/ReparacionDeMaquinariasHosteleria';
+import TecnicoFreidorasIndustriales from './pages/blog/TecnicoFreidorasIndustriales';
 import Barcos from './pages/barcos/Barcos';
 import Mantenimiento from './pages/barcos/Mantenimiento';
 import Limpieza from './pages/barcos/Limpieza';
 import CostoManutencionYate from './pages/barcos/CostoManutencionYate';
 import CostoManutencionYate30M from './pages/barcos/CostoManutencionYate30M';
 import CostoManutencionYateLujo from './pages/barcos/CostoManutencionYateLujo';
+import CuartosFrios from './pages/cuartosfrios/CuartosFrios';
+import CamaraRefrigeracionSegundaMano from './pages/cuartosfrios/CamaraRefrigeracionSegundaMano';
+import CamarasFrigorificasIndustriales from './pages/cuartosfrios/CamarasFrigorificasIndustriales';
+import CamarasFrigorificasPrecio from './pages/cuartosfrios/CamarasFrigorificasPrecio';
+import CamarasFrigorificasSegundaMano from './pages/cuartosfrios/CamarasFrigorificasSegundaMano';
+import CamarasFrioSegundaMano from './pages/cuartosfrios/CamarasFrioSegundaMano';
+import CuartosFriosUsadosVenta from './pages/cuartosfrios/CuartosFriosUsadosVenta';
+import EquipoFrioIndustrialSegundaMano from './pages/cuartosfrios/EquipoFrioIndustrialSegundaMano';
+import PanelesFrigorificosSegundaMano from './pages/cuartosfrios/PanelesFrigorificosSegundaMano';
+import PrecioCamarasDeFrio from './pages/cuartosfrios/PrecioCamarasDeFrio';
+import PuertaCamaraFrigorificas from './pages/cuartosfrios/PuertaCamaraFrigorificas';
+import VentaCamarasFrigorificas from './pages/cuartosfrios/VentaCamarasFrigorificas';
 
 // Componente para manejar el scroll automático
 function ScrollToTop() {
@@ -70,6 +84,18 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="/servicio-mantenimiento-limpieza-yates-barcos-palma-mallorca" element={<Barcos />} />
+                            <Route path="/cuartos-frios" element={<CuartosFrios />} />
+                  <Route path="/camara-refrigeracion-segunda-mano" element={<CamaraRefrigeracionSegundaMano />} />
+                  <Route path="/camaras-frigorificas-industriales" element={<CamarasFrigorificasIndustriales />} />
+                  <Route path="/camaras-frigorificas-precio" element={<CamarasFrigorificasPrecio />} />
+                  <Route path="/camaras-frigorificas-segunda-mano" element={<CamarasFrigorificasSegundaMano />} />
+                  <Route path="/camaras-frio-segunda-mano" element={<CamarasFrioSegundaMano />} />
+                  <Route path="/cuartos-frios-usados-venta" element={<CuartosFriosUsadosVenta />} />
+                  <Route path="/equipo-frio-industrial-segunda-mano" element={<EquipoFrioIndustrialSegundaMano />} />
+                  <Route path="/paneles-frigorificos-segunda-mano" element={<PanelesFrigorificosSegundaMano />} />
+                  <Route path="/precio-camaras-de-frio" element={<PrecioCamarasDeFrio />} />
+                  <Route path="/puerta-camara-frigorificas" element={<PuertaCamaraFrigorificas />} />
+                  <Route path="/venta-camaras-frigorificas" element={<VentaCamarasFrigorificas />} />
           <Route path="/mantenimiento-de-barcos-yates-mallorca" element={<Mantenimiento />} />
           <Route path="/limpieza-de-barcos-yates-mallorca" element={<Limpieza />} />
           <Route path="/costos-mantenimiento-yates-mallorca" element={<CostoManutencionYate />} />
@@ -113,6 +139,8 @@ function App() {
           <Route path="/blog/reparacion-planchas" element={<ReparacionDePlanchas />} />
           <Route path="/blog/reparacion-vitrinas" element={<ReparacionDeVitrinas />} />
           <Route path="/blog/reparacion-congeladores" element={<ReparacionDeCongeladores />} />
+          <Route path="/blog/reparacion-maquinaria-hosteleria" element={<ReparacionDeMaquinariasHosteleria />} />
+          <Route path="/blog/tecnico-freidoras-industriales" element={<TecnicoFreidorasIndustriales />} />
           {/* Ruta catch-all para URLs inexistentes - redirige a la página principal */}
           <Route path="*" element={<Navigate to="/inicio" replace />} />
         </Routes>
