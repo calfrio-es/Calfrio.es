@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import imgInst from '../../../assets/img/products/armarios-refrigeradores/armario-refrigerado-200-litros-acero-inoxidable.webp';
-import imgMant from '../../../assets/img/products/armarios-refrigeradores/armario-refrigerado-gn21-600-litros-1-puerta-de-vidrio-de-775x750.webp';
-import imgRep from '../../../assets/img/products/armarios-refrigeradores/armario-snack-congelados-350-litros-1-puerta-lacado-blanco.webp';
+import imgInst from '../../../assets/img/camarasfrigorificas (1).jpg';
+import imgMant from '../../../assets/img/camarasfrigorificas (2).jpg';
+import imgRep from '../../../assets/img/camarasfrigorificas.jpg';
 
 const ServicesCuartosFrios = () => {
   const navigate = useNavigate();
