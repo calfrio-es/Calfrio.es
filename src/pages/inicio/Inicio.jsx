@@ -21,6 +21,8 @@ const Inicio = () => {
     <div className="w-full min-h-screen">
       <Header />
       <main role="main">
+        {/* H1 principal para SEO - visible y accesible */}
+        <h1 className="sr-only">Maquinaria de Hostelería Profesional - Calfrio | Palma de Mallorca</h1>
         <Hero />
         <About />
         <ProductsInicio />
