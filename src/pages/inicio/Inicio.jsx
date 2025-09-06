@@ -12,8 +12,8 @@ import useSEO from '../../hooks/useSEO';
 const Inicio = () => {
   // Configuración SEO específica para la página de inicio
   useSEO({
-    title: "Maquinaria de Hostelería Profesional - Calfrio | Palma de Mallorca",
-    description: "Descubre la mejor maquinaria de hostelería profesional en Palma de Mallorca. Lavavajillas industriales, cocinas profesionales, freidoras, abatidores y equipos de acero inoxidable. 15+ años de experiencia, venta, reparación y servicio técnico especializado.",
+    title: "Maquinaria Hostelería Profesional - Calfrio Palma",
+    description: "Maquinaria de hostelería profesional en Palma de Mallorca. Lavavajillas, cocinas, freidoras y equipos de acero inoxidable. Venta, reparación y servicio técnico.",
     keywords: "maquinaria hostelería Palma Mallorca, lavavajillas industriales, cocinas profesionales, freidoras, abatidores, acero inoxidable, reparación hostelería, equipos hostelería, Calfrio"
   });
 
@@ -22,7 +22,7 @@ const Inicio = () => {
       <Header />
       <main role="main">
         {/* H1 principal para SEO - visible y accesible */}
-        <h1 className="sr-only">Maquinaria de Hostelería Profesional - Calfrio | Palma de Mallorca</h1>
+        <h1 className="sr-only">Maquinaria Hostelería Profesional - Calfrio Palma</h1>
         <Hero />
         <About />
         <ProductsInicio />
