@@ -61,9 +61,9 @@ const Services = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Título de la sección */}
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Nuestros <span className="text-cyan-400">Servicios</span>
-          </h3>
+          </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
             Ofrecemos una gama completa de servicios para el sector de la hostelería,
             desde la venta hasta el mantenimiento y reparación de equipos. Descubre nuestros

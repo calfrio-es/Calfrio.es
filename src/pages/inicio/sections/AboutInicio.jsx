@@ -10,9 +10,9 @@ const About = () => {
           {/* Contenido de texto - Lado izquierdo */}
           <div className="space-y-5 text-center lg:text-left">
             <div className="space-y-3">
-              <h3 className="text-3xl font-bold text-gray-900">
+              <h2 className="text-3xl font-bold text-gray-900">
                 Sobre <span className="text-cyan-400">Calfrio</span>
-              </h3>
+              </h2>
               <p className="text-base text-gray-600 leading-relaxed">
               Especializados en la venta de productos de hotelería de alta calidad en Palma de Mallorca. Nos dedicamos a ofrecer una amplia gama de soluciones para el sector hostelero, con productos fabricados en acero inoxidable, garantizando durabilidad, resistencia y diseño moderno para satisfacer las exigencias de cualquier establecimiento.
               </p>

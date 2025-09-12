@@ -60,9 +60,9 @@ const ProductsInicio = () => {
       <div className="container mx-auto max-w-7xl px-4">
                  {/* Título de la sección */}
          <div className="text-center mb-8">
-           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
              Nuestros Productos Destacados
-           </h3>
+           </h2>
            <p className="text-gray-600 text-base max-w-xl mx-auto mb-4">
              Descubre nuestra amplia gama de equipos para hostelería fabricados en acero inoxidable de la máxima calidad. Ofrecemos lavavajillas industriales, freidoras profesionales, cocinas de gas, hornos para pizza, planchas de asar y equipos de refrigeración comercial. Todos nuestros productos cumplen con las normativas europeas de seguridad alimentaria y están diseñados para un uso intensivo en el sector hostelero.
            </p>

@@ -42,9 +42,9 @@ const Contact = () => {
          <section className="py-12 bg-white">
        <div className="container mx-auto max-w-7xl px-4">
          <div className="text-center mb-8">
-           <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
              ¿Necesitas <span className="text-cyan-400">asesoramiento</span>?
-           </h3>
+           </h2>
            <p className="text-base text-gray-600 max-w-2xl mx-auto">
              Resuelve tus dudas o contáctanos directamente para obtener asesoramiento personalizado.
              También puedes explorar nuestros <Link to="/productos" className="text-cyan-400 hover:text-cyan-500 transition-colors">productos</Link> o
@@ -58,9 +58,9 @@ const Contact = () => {
               <div className="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col justify-center">
                 <div className="text-center">
                   <div className="mb-6">
-                    <span className="text-xl font-bold text-gray-800 mb-3 block">
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Productos de hostelería, mantenimiento, reparación!
-                    </span>
+                    </h3>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-md mx-auto">
                       Escríbenos por WhatsApp y te atenderemos de inmediato. Nuestro equipo especializado en maquinaria de hostelería está listo para resolver todas tus dudas sobre productos, presupuestos, instalación y mantenimiento. Atendemos consultas sobre lavavajillas industriales, freidoras profesionales, cocinas de gas y equipos de refrigeración.
                     </p>
@@ -87,9 +87,9 @@ const Contact = () => {
                       {/* Columna Preguntas Frecuentes - Segunda en móvil, primera en desktop */}
             <div className="lg:col-span-1 order-2 lg:order-1">
               <div className="bg-white rounded-lg shadow-lg p-5 h-full">
-                <span className="text-xl font-bold text-gray-800 mb-4 block">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
                   Preguntas Frecuentes
-                </span>
+                </h3>
                 <div className="space-y-3">
                  {preguntasFrecuentes.map((item) => (
                    <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden">
