@@ -37,7 +37,7 @@ const Header = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo y nombre */}
             <div className="flex items-center space-x-3">
-              <Link to="/inicio" className="flex items-center space-x-3">
+              <Link to="/" className="flex items-center space-x-3">
                 <img src={logo} alt="Calfrio Logo" className="w-10 h-10 object-cover rounded-lg" />
                 <span className="text-2xl font-bold text-gray-800">Calfrio</span>
               </Link>
@@ -45,7 +45,7 @@ const Header = () => {
 
             {/* Navegación central */}
             <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
-              <Link to="/inicio" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
+              <Link to="/" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
                 Inicio
               </Link>
               <Link to="/services" className="text-black !text-black hover:text-cyan-400 font-medium text-sm transition-colors duration-300 no-underline">
@@ -126,8 +126,8 @@ const Header = () => {
                {/* Navegación móvil - con scroll */}
                <nav className="flex-1 overflow-y-auto p-6">
                  <div className="space-y-6">
-                   <Link 
-                     to="/inicio" 
+                   <Link
+                     to="/"
                      onClick={closeMobileMenu}
                      className="block text-lg font-medium text-gray-800 hover:text-cyan-400 transition-colors duration-300"
                    >

@@ -79,8 +79,8 @@ function App() {
       <ScrollToTop />
       <div className="App w-full min-h-screen">
         <Routes>
-          <Route path="/" element={<Navigate to="/inicio" replace />} />
-          <Route path="/inicio" element={<Inicio />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/inicio" element={<Navigate to="/" replace />} />
           <Route path="/services" element={<Services />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="/servicio-mantenimiento-limpieza-yates-barcos-palma-mallorca" element={<Barcos />} />
@@ -142,7 +142,7 @@ function App() {
           <Route path="/blog/reparacion-maquinaria-hosteleria" element={<ReparacionDeMaquinariasHosteleria />} />
           <Route path="/blog/tecnico-freidoras-industriales" element={<TecnicoFreidorasIndustriales />} />
           {/* Ruta catch-all para URLs inexistentes - redirige a la página principal */}
-          <Route path="*" element={<Navigate to="/inicio" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </Router>
