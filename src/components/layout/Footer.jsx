@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.webp';
 
 const Footer = () => {
@@ -17,6 +18,7 @@ const Footer = () => {
             {/* Descripción */}
             <p className="text-gray-600 text-sm max-w-md mx-auto lg:mx-0">
               En Calfrio, somos especialistas en la venta de equipamiento de hostelería en Palma de Mallorca. Ofrecemos productos de alta calidad, fabricados en España, para cubrir las necesidades de bares, restaurantes, hoteles y cafeterías.
+              <Link to="/servicio-mantenimiento-limpieza-yates-barcos-palma-mallorca" className="text-cyan-400 hover:text-cyan-500 transition-colors block mt-2">También servicios especializados para yates y barcos</Link>
             </p>
             
             {/* Redes sociales */}

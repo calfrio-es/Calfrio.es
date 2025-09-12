@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { products } from '../../../data/products';
 
 // Importar imágenes de productos destacados
@@ -60,11 +60,14 @@ const ProductsInicio = () => {
       <div className="container mx-auto max-w-7xl px-4">
                  {/* Título de la sección */}
          <div className="text-center mb-8">
-           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
              Nuestros Productos Destacados
-           </h2>
+           </h3>
            <p className="text-gray-600 text-base max-w-xl mx-auto mb-4">
-             Descubre nuestra amplia gama de equipos para hostelería.
+             Descubre nuestra amplia gama de equipos para hostelería fabricados en acero inoxidable de la máxima calidad. Ofrecemos lavavajillas industriales, freidoras profesionales, cocinas de gas, hornos para pizza, planchas de asar y equipos de refrigeración comercial. Todos nuestros productos cumplen con las normativas europeas de seguridad alimentaria y están diseñados para un uso intensivo en el sector hostelero.
+           </p>
+           <p className="text-gray-600 text-base max-w-xl mx-auto mb-4">
+             Explora nuestras <Link to="/blog/lavavajillas-industriales" className="text-cyan-400 hover:text-cyan-500 transition-colors">guías especializadas sobre equipos</Link> y conoce nuestros <Link to="/services" className="text-cyan-400 hover:text-cyan-500 transition-colors">servicios de mantenimiento preventivo</Link> para prolongar la vida útil de tus equipos.
            </p>
            
                        {/* Botón para ver todos los productos */}
@@ -111,9 +114,9 @@ const ProductsInicio = () => {
                        </div>
                        
                        {/* Nombre del producto */}
-                       <h3 className="text-xs font-semibold text-gray-800 group-hover:text-cyan-400 transition-colors line-clamp-2">
+                       <span className="text-xs font-semibold text-gray-800 group-hover:text-cyan-400 transition-colors line-clamp-2">
                          {producto.name}
-                       </h3>
+                       </span>
                      </div>
                     
                     

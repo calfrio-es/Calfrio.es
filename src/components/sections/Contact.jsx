@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -41,11 +42,13 @@ const Contact = () => {
          <section className="py-12 bg-white">
        <div className="container mx-auto max-w-7xl px-4">
          <div className="text-center mb-8">
-           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+           <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
              ¿Necesitas <span className="text-cyan-400">asesoramiento</span>?
-           </h2>
+           </h3>
            <p className="text-base text-gray-600 max-w-2xl mx-auto">
-             Resuelve tus dudas o contáctanos directamente para obtener asesoramiento personalizado
+             Resuelve tus dudas o contáctanos directamente para obtener asesoramiento personalizado.
+             También puedes explorar nuestros <Link to="/productos" className="text-cyan-400 hover:text-cyan-500 transition-colors">productos</Link> o
+             <Link to="/services" className="text-cyan-400 hover:text-cyan-500 transition-colors"> servicios</Link> antes de contactarnos.
            </p>
          </div>
  
@@ -55,11 +58,11 @@ const Contact = () => {
               <div className="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col justify-center">
                 <div className="text-center">
                   <div className="mb-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    <span className="text-xl font-bold text-gray-800 mb-3 block">
                       Productos de hostelería, mantenimiento, reparación!
-                    </h3>
+                    </span>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-md mx-auto">
-                      Escríbenos por WhatsApp y te atenderemos de inmediato. Nuestro equipo especializado está listo para resolver todas tus dudas sobre productos y servicios.
+                      Escríbenos por WhatsApp y te atenderemos de inmediato. Nuestro equipo especializado en maquinaria de hostelería está listo para resolver todas tus dudas sobre productos, presupuestos, instalación y mantenimiento. Atendemos consultas sobre lavavajillas industriales, freidoras profesionales, cocinas de gas y equipos de refrigeración.
                     </p>
                   </div>
                   
@@ -84,9 +87,9 @@ const Contact = () => {
                       {/* Columna Preguntas Frecuentes - Segunda en móvil, primera en desktop */}
             <div className="lg:col-span-1 order-2 lg:order-1">
               <div className="bg-white rounded-lg shadow-lg p-5 h-full">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                <span className="text-xl font-bold text-gray-800 mb-4 block">
                   Preguntas Frecuentes
-                </h3>
+                </span>
                 <div className="space-y-3">
                  {preguntasFrecuentes.map((item) => (
                    <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden">

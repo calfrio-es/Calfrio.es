@@ -43,23 +43,23 @@ const Hero = () => {
       
       <div className="relative z-10 w-full h-full flex items-center justify-center">
         <div className="text-center text-white max-w-4xl px-5">
-          <header className="mb-8">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg" 
-                style={{ 
+          <div className="mb-8">
+            <p className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg"
+                style={{
                   textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
                   color: '#ffffff'
                 }}
                 aria-label="Maquinaria de Hostelería Profesional - Calfrio">
               Maquinaria de <span className="text-cyan-400 drop-shadow-[0_0_10px_rgba(0,212,255,0.5)]">Hostelería</span> Profesional
-            </h2>
-            <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-md" 
-               style={{ 
+            </p>
+            <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-md"
+               style={{
                  textShadow: '1px 1px 2px rgba(0,0,0,0.8)',
                  color: '#ffffff'
                }}>
               Bienvenido a Calfrio, tu aliado en la industria de la hostelería.
             </p>
-          </header>
+          </div>
         </div>
       </div>
     </section>

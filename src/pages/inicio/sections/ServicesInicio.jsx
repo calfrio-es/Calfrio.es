@@ -61,12 +61,14 @@ const Services = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Título de la sección */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">
             Nuestros <span className="text-cyan-400">Servicios</span>
-          </h2>
+          </h3>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
-            Ofrecemos una gama completa de servicios para el sector de la hostelería, 
-            desde la venta hasta el mantenimiento y reparación de equipos.
+            Ofrecemos una gama completa de servicios para el sector de la hostelería,
+            desde la venta hasta el mantenimiento y reparación de equipos. Descubre nuestros
+            <Link to="/productos" className="text-cyan-400 hover:text-cyan-500 transition-colors"> productos especializados</Link> y
+            <Link to="/contacto" className="text-cyan-400 hover:text-cyan-500 transition-colors"> contáctanos</Link> para más información.
           </p>
         </div>
 
@@ -81,9 +83,9 @@ const Services = () => {
                 <div className="bg-transparent p-3 rounded-lg text-gray-800 mr-4 border-2 border-cyan-400">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">
+                <span className="text-xl font-semibold text-gray-900">
                   {service.title}
-                </h3>
+                </span>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
                 {service.description}
