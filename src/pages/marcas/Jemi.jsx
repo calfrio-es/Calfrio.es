@@ -4,64 +4,64 @@ import SEO from "../../components/layout/SEO.jsx"
 import Header from "../../components/layout/Header.jsx"
 import Footer from "../../components/layout/Footer.jsx"
 
-// Importar imágenes locales
-import bancoBarAcero1 from "../../assets/sillasimg/banco-bar-acero-1.jpg"
-import sillaBarAcero2 from "../../assets/sillasimg/silla-bar-acero-2.jpg"
-import bancoBarAcero4 from "../../assets/sillasimg/banco-bar-acero-4.jpg"
-import sillaBarVintage from "../../assets/sillasimg/silla-bar-vintage.jpg"
-import bancoBarModerno from "../../assets/sillasimg/banco-bar-moderno.jpg"
-import bancoBarMetal from "../../assets/sillasimg/banco-bar-metal.jpg"
+// Importar imágenes relacionadas con lavavajillas y equipos de cocción profesional
+import lavavajillascopas from "../../assets/img/lavavajillascopas.jpg"
+import lavavajillasdebar from "../../assets/img/lavavajillasdebar.jpg"
+import lavavajillashosteleria from "../../assets/img/lavavajillashosteleria.jpg"
+import lavavajillasindustriales from "../../assets/img/lavavajillasindustriales.jpg"
+import lavavasosbar from "../../assets/img/lavavasosbar.jpg"
+import lavavasosindustrial from "../../assets/img/lavavasosindustrial.jpg"
 
-export default function BancosParaBarModernos() {
+export default function Jemi() {
   const [openFaq, setOpenFaq] = useState(null)
 
   const benefits = [
     {
       icon: <Clock className="w-8 h-8" />,
-      title: "Entrega Inmediata",
-      description: "Disponibilidad inmediata de nuestros bancos modernos para bar. Entrega en 24-48 horas.",
-      image: sillaBarAcero2,
+      title: "Servicio Técnico Especializado",
+      description: "Técnicos especializados en equipos Jemi con formación específica en lavavajillas industriales y cocción profesional.",
+      image: lavavajillascopas,
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
-      title: "Calidad Premium",
-      description: "Bancos fabricados con materiales de primera calidad y diseño moderno para hostelería.",
-      image: bancoBarAcero4,
+      title: "Recambios Originales",
+      description: "Disponibilidad inmediata de piezas originales Jemi para mantener el rendimiento óptimo de tus equipos de lavado y cocción.",
+      image: lavavajillasdebar,
     },
     {
       icon: <Wrench className="w-8 h-8" />,
       title: "Instalación Profesional",
-      description: "Servicio de montaje incluido con nuestros técnicos especializados en mobiliario de hostelería.",
-      image: sillaBarVintage,
+      description: "Montaje y configuración profesional de equipos Jemi por especialistas certificados en hostelería profesional.",
+      image: lavavajillashosteleria,
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Garantía Extendida",
-      description: "Garantía de 2 años en estructura y materiales. Soporte técnico continuo.",
-      image: bancoBarMetal,
+      description: "Garantía oficial Jemi en todos nuestros servicios de venta, instalación y mantenimiento.",
+      image: lavavajillasindustriales,
     },
   ]
 
   const faqs = [
     {
-      question: "¿Qué materiales utilizan para fabricar los bancos?",
+      question: "¿Qué tipos de equipos Jemi manejan?",
       answer:
-        "Utilizamos materiales premium como acero inoxidable, madera maciza tratada y tapizados de alta resistencia. Todos nuestros bancos están diseñados específicamente para entornos de hostelería con alto tránsito.",
+        "Somos especialistas en equipos Jemi para hostelería: lavavajillas industriales, cocinas profesionales, hornos, fregaderos, equipos de cocción y todo el equipamiento necesario para restaurantes, hoteles y bares. Ofrecemos venta, instalación y mantenimiento para el sector de la hostelería profesional.",
     },
     {
-      question: "¿Los bancos son apilables o fijos?",
+      question: "¿Ofrecen formación para el uso de equipos Jemi?",
       answer:
-        "Ofrecemos ambas opciones: bancos fijos para instalación permanente y bancos apilables para mayor versatilidad. Los apilables facilitan el almacenamiento y limpieza del local.",
+        "Sí, proporcionamos formación completa para el uso correcto de equipos Jemi. Nuestros cursos incluyen técnicas de lavado industrial, mantenimiento de cocinas profesionales, seguridad en el manejo de equipos de gas y electricidad, y optimización de procesos culinarios y de higiene.",
     },
     {
-      question: "¿Cuánto tiempo dura la entrega?",
+      question: "¿Cuánto tiempo tardan en reparar un equipo Jemi?",
       answer:
-        "La entrega estándar es de 24-48 horas para modelos en stock. Para pedidos personalizados o grandes cantidades, coordinamos plazos específicos según la disponibilidad de materiales.",
+        "Los tiempos de reparación dependen del tipo de avería, pero tenemos piezas originales en stock para minimizar los tiempos de inactividad. La mayoría de las reparaciones se realizan en 24-48 horas para equipos en garantía.",
     },
     {
-      question: "¿Incluyen la instalación?",
+      question: "¿Trabajan con equipos Jemi de segunda mano?",
       answer:
-        "Sí, todos nuestros bancos incluyen instalación profesional por parte de nuestro equipo técnico especializado. Nos aseguramos de que queden perfectamente nivelados y seguros.",
+        "Sí, ofrecemos equipos Jemi reacondicionados con garantía completa, inspección técnica exhaustiva y certificación de funcionamiento. Todos pasan por nuestro taller antes de la entrega para asegurar su perfecto estado.",
     },
   ]
 
@@ -69,25 +69,25 @@ export default function BancosParaBarModernos() {
     <div className="w-full min-h-screen">
       <Header />
       <SEO
-        title="Bancos para Bar Modernos"
-        description="Bancos modernos para bares y restaurantes. Diseño contemporáneo, materiales premium y máxima comodidad. Ideales para hostelería profesional."
-        keywords="bancos para bar modernos, bancos bar restaurante, mobiliario hostelería, bancos diseño moderno, bancos acero inoxidable, bancos madera, bancos tapizados bar"
-        canonical="/bancos-para-bar-modernos"
+        title="Especialistas en Jemi - Lavavajillas Industriales y Cocción Profesional"
+        description="Especialistas en venta, instalación y mantenimiento de equipos Jemi. Lavavajillas industriales, cocinas profesionales, hornos y fregaderos."
+        keywords="Jemi lavavajillas, mantenimiento equipos Jemi, cocinas profesionales Jemi, lavavajillas industriales Jemi, venta equipos Jemi España"
+        canonical="/marcas/jemi"
       />
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Bancos para Bar <span className="text-cyan-600">Modernos</span>
+            Especialistas en <span className="text-cyan-600">Jemi</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto">
-            Soluciones de mobiliario contemporáneo para bares y restaurantes. Diseño elegante y funcionalidad premium
+            Venta, instalación y mantenimiento profesional de equipos Jemi para hostelería
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => {
                 const phoneNumber = '+34632075370'
-                const message = 'Hola, estoy interesado en bancos modernos para mi bar. ¿Podrían asesorarme?'
+                const message = 'Hola, estoy interesado en equipos Jemi para mi establecimiento. ¿Podrían asesorarme?'
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
                 window.open(whatsappUrl, '_blank')
               }}
@@ -98,13 +98,13 @@ export default function BancosParaBarModernos() {
             <button
               onClick={() => {
                 const phoneNumber = '+34632075370'
-                const message = 'Hola, quiero comprar bancos modernos para mi bar. ¿Me pueden ayudar con el proceso de compra?'
+                const message = 'Hola, necesito mantenimiento para mis equipos Jemi. ¿Me pueden ayudar?'
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
                 window.open(whatsappUrl, '_blank')
               }}
               className="inline-block bg-white text-cyan-600 border-2 border-cyan-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-50 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              Comprar
+              Servicio Técnico
             </button>
           </div>
         </div>
@@ -115,10 +115,12 @@ export default function BancosParaBarModernos() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12 border-t-4 border-cyan-500">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Ofrecemos una amplia gama de bancos modernos diseñados específicamente para el sector de la hostelería.
-              Nuestros bancos combinan diseño contemporáneo con máxima durabilidad, utilizando materiales premium como
-              acero inoxidable, madera maciza y tapizados de alta resistencia. Cada pieza está pensada para resistir
-              el alto tránsito de bares y restaurantes, manteniendo su elegancia con el paso del tiempo.
+              Somos especialistas certificados en equipos Jemi, la marca española líder en equipamiento profesional
+              para hostelería. Ofrecemos soluciones completas que incluyen venta de lavavajillas industriales,
+              cocinas profesionales, hornos, fregaderos, equipos de cocción y todo el equipamiento necesario para
+              restaurantes, bares y hoteles. Nuestro servicio técnico especializado garantiza el funcionamiento
+              óptimo de tus equipos Jemi con mantenimiento preventivo y reparaciones por técnicos certificados
+              en equipamiento de hostelería profesional.
             </p>
           </div>
         </div>
@@ -127,7 +129,7 @@ export default function BancosParaBarModernos() {
       {/* Benefits Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">¿Por qué elegirnos?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">¿Por qué elegirnos para tus equipos Jemi?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div
@@ -158,18 +160,19 @@ export default function BancosParaBarModernos() {
         <div className="max-w-6xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src={bancoBarModerno}
-              alt="Bancos modernos para bar en restaurante elegante"
+              src={lavavasosbar}
+              alt="Equipos Jemi para lavado profesional y cocción en hostelería"
               className="w-full h-[400px] sm:h-[500px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-900/90 to-cyan-700/70 flex items-center">
               <div className="px-8 sm:px-16 max-w-2xl">
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                  Diseño Moderno y Funcionalidad
+                  Excelencia Española en Equipamiento Profesional
                 </h2>
                 <p className="text-lg sm:text-xl text-cyan-50">
-                  Nuestros bancos modernos combinan estética contemporánea con ergonomía perfecta, creando espacios
-                  acogedores que invitan a tus clientes a permanecer más tiempo en tu establecimiento.
+                  Los equipos Jemi representan la calidad española en equipamiento profesional,
+                  combinando diseño funcional, durabilidad excepcional y tecnología avanzada para
+                  satisfacer las demandas más exigentes de la hostelería moderna.
                 </p>
               </div>
             </div>
@@ -180,12 +183,12 @@ export default function BancosParaBarModernos() {
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-cyan-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">¿Necesitas bancos modernos para tu bar?</h2>
-          <p className="text-xl text-cyan-50 mb-8">Contáctanos ahora y recibe asesoramiento personalizado para tu proyecto</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">¿Necesitas equipos Jemi o mantenimiento?</h2>
+          <p className="text-xl text-cyan-50 mb-8">Contáctanos ahora y recibe asesoramiento especializado para tu negocio</p>
           <button
             onClick={() => {
               const phoneNumber = '+34632075370'
-              const message = 'Hola, estoy interesado en bancos modernos para mi bar. ¿Podrían asesorarme?'
+              const message = 'Hola, estoy interesado en equipos Jemi para mi establecimiento. ¿Podrían asesorarme?'
               const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
               window.open(whatsappUrl, '_blank')
             }}
@@ -196,36 +199,36 @@ export default function BancosParaBarModernos() {
         </div>
       </section>
 
-            {/* Featured Image Section */}
-            <section className="px-4 py-16">
+      {/* Featured Image Section */}
+      <section className="px-4 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="overflow-hidden rounded-3xl bg-cyan-600 shadow-2xl">
             <div className="grid gap-0 md:grid-cols-2">
               <div className="relative h-64 md:h-auto">
                 <img
-                  src={bancoBarAcero1}
-                  alt="Bancos modernos para bar con diseño elegante"
+                  src={lavavasosindustrial}
+                  alt="Equipos Jemi con tecnología avanzada para lavado profesional y cocción"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="flex flex-col justify-center p-8 md:p-12">
-                <h3 className="mb-4 text-3xl font-bold text-white">Calidad y Durabilidad Premium</h3>
+                <h3 className="mb-4 text-3xl font-bold text-white">Servicio Técnico Certificado Jemi</h3>
                 <p className="mb-6 text-pretty text-lg leading-relaxed text-cyan-50">
-                  Nuestros bancos están fabricados con materiales de primera calidad que resisten el uso intensivo
-                  de entornos hosteleros. Diseñados para durar años manteniendo su apariencia elegante y funcionalidad.
+                  Nuestro equipo técnico está certificado por Jemi para proporcionar mantenimiento preventivo y correctivo
+                  de todos los equipos. Garantizamos el funcionamiento óptimo y la prolongación de la vida útil de tus equipos de lavado y cocción.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-200" />
-                    <span className="text-cyan-50">Materiales resistentes al desgaste</span>
+                    <span className="text-cyan-50">Técnicos certificados por Jemi</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-200" />
-                    <span className="text-cyan-50">Fáciles de limpiar y mantener</span>
+                    <span className="text-cyan-50">Recambios originales disponibles</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-cyan-200" />
-                    <span className="text-cyan-50">Diseño ergonómico para máxima comodidad</span>
+                    <span className="text-cyan-50">Formación especializada en hostelería</span>
                   </li>
                 </ul>
               </div>
@@ -234,11 +237,10 @@ export default function BancosParaBarModernos() {
         </div>
       </section>
 
-
       {/* FAQ Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">Preguntas Frecuentes</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">Preguntas Frecuentes sobre Jemi</h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">

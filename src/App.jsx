@@ -160,6 +160,34 @@ import SillonesParaBarModernos from './pages/sillas/SillonesParaBarModernos';
 import VentaDeSillasParaBar from './pages/sillas/VentaDeSillasParaBar';
 import SillonesParaCafeteria from './pages/sillas/SillonesParaCafeteria';
 import VentaMesasYSillasParaRestaurante from './pages/sillas/VentaMesasYSillasParaRestaurante';
+import Adler from './pages/marcas/Adler';
+import Lucca from './pages/marcas/Lucca';
+import Fagor from './pages/marcas/Fagor';
+import Dynamic from './pages/marcas/Dynamic';
+import Gicar from './pages/marcas/Gicar';
+import Infrico from './pages/marcas/Infrico';
+import Josper from './pages/marcas/Josper';
+import Ascaso from './pages/marcas/Ascaso';
+import Dina from './pages/marcas/Dina';
+import Sammic from './pages/marcas/Sammic';
+import Bertos from './pages/marcas/Bertos';
+import Imperia from './pages/marcas/Imperia';
+import Rational from './pages/marcas/Rational';
+import Silanos from './pages/marcas/Silanos';
+import Docriluc from './pages/marcas/Docriluc';
+import Edenox from './pages/marcas/Edenox';
+import Coreco from './pages/marcas/Coreco';
+import Gaggia from './pages/marcas/Gaggia';
+import RobotCoupe from './pages/marcas/RobotCoupe';
+import Zumex from './pages/marcas/Zumex';
+import Distform from './pages/marcas/Distform';
+import Mainca from './pages/marcas/Mainca';
+import Repagas from './pages/marcas/Repagas';
+import Immergas from './pages/marcas/Immergas';
+import Jemi from './pages/marcas/Jemi';
+import Movilfrit from './pages/marcas/Movilfrit';
+import Unox from './pages/marcas/Unox';
+import Zummo from './pages/marcas/Zummo';
 // Componente para manejar el scroll automático
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -338,6 +366,34 @@ function App() {
           <Route path="/venta-de-sillas-para-bar" element={<VentaDeSillasParaBar />} />
           <Route path="/sillones-para-cafeteria" element={<SillonesParaCafeteria />} />
           <Route path="/venta-mesas-y-sillas-para-restaurante" element={<VentaMesasYSillasParaRestaurante />} />
+          <Route path='/adler' element={<Adler />} />
+          <Route path='/lucca' element={<Lucca />} />
+          <Route path='/fagor' element={<Fagor />} />
+          <Route path='/dynamic' element={<Dynamic />} />
+          <Route path='/gicar' element={<Gicar />} />
+          <Route path='/infrico' element={<Infrico />} />
+          <Route path='/josper' element={<Josper />} />
+          <Route path='/ascaso' element={<Ascaso />} />
+          <Route path='/dina' element={<Dina />} />
+          <Route path='/sammic' element={<Sammic />} />
+          <Route path='/bertos' element={<Bertos />} />
+          <Route path='/imperia' element={<Imperia />} />
+          <Route path='/rational' element={<Rational />} />
+          <Route path='/silanos' element={<Silanos />} />
+          <Route path='/docriluc' element={<Docriluc />} />
+          <Route path='/edenox' element={<Edenox />} />
+          <Route path='/coreco' element={<Coreco />} />
+          <Route path='/gaggia' element={<Gaggia />} />
+          <Route path='/robot-coupe' element={<RobotCoupe />} />
+          <Route path='/zumex' element={<Zumex />} />
+          <Route path='/distform' element={<Distform />} />
+          <Route path='/mainca' element={<Mainca />} />
+          <Route path='/repagas' element={<Repagas />} />
+          <Route path='/immergas' element={<Immergas />} />
+          <Route path='/jemi' element={<Jemi />} />
+          <Route path='/movilfrit' element={<Movilfrit />} />
+          <Route path='/unox' element={<Unox />} />
+          <Route path='/zummo' element={<Zummo />} />
           {/* Ruta catch-all para URLs inexistentes - redirige a la página principal */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
